@@ -1,19 +1,26 @@
 {% extends 'base.html.twig' %}
-
-{% block title %}Register{% endblock %}
+{# {% block head %}
+	{{ parent() }}
+	<link rel="stylesheet" href="{{ asset('css/creation.css') }}">
+{% endblock %} #}
+{% block title %}Creation compte
+{% endblock %}
 
 {% block body %}
-    <h1>Register</h1>
+<main>
+<section class="creation">
+<h2>Créer un compte</h2>
+<form class="formulaire" method="post">
+					<div id="display_start">
+						<label for="mail">Email :</label><br>
+						<input type="email" id="mail2" placeholder="Entrez un email*" name="mail"><br>
+						<label for="password">Mot de passe :</label>
+						<input type="password" id="mdp2" minlength="4" maxlength="20" placeholder="Mot de passe*" name="password">
+					</div>
+				
+					<input class="btn ocre valider" type="submit" value="Valider">
+				</form>
+			</section>
+		</main>
 
-    {{ form_errors(registrationForm) }}
-
-    {{ form_start(registrationForm) }}
-        {{ form_row(registrationForm.email) }}
-        {{ form_row(registrationForm.plainPassword, {
-            label: 'Password'
-        }) }}
-        {{ form_row(registrationForm.agreeTerms) }}
-
-        <button type="submit" class="btn">Register</button>
-    {{ form_end(registrationForm) }}
 {% endblock %}
