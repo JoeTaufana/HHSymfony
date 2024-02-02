@@ -1,0 +1,94 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+
+{% block body %}
+    <body>
+        <main>
+            <section id="home">
+                <div class="gauche">
+                    <h1>On te fait <br>gagner du temps !</h1>
+                    <div>
+                        <img id="clou_jaune" src="{{asset('img/clou_jaune.svg')}}" alt="decoration">
+                        <div id="paragraphe_home">
+                            <h2>Imaginez une vie où le temps est de votre côté.</h2>
+                            <p> Avec notre application, chaque instant compte !
+                                Profitez de plus de temps pour vous, pour votre famille, pour ceux qui comptent
+                                vraiment.
+                                Essayez notre application aujourd'hui et reprenez le contrôle de votre emploi du temps
+                            </p>
+                        </div>
+                    </div>
+                    <a href="" class="btn jaune">je crée un compte</a>
+                </div>
+                <div class="droite">
+                    <div>
+                        <img src="{{asset('img/horloge_famille.png')}}"
+                            alt="3 enfants qui font un puzzle Horloge imposante en haut à gauche">
+                    </div>
+                </div>
+            </section>
+
+            <!--******************************* Chassons l'ennui!*************************-->
+            <section id="defis">
+                <div class="conteneur">
+                    <h1>Chassons l'ennui !</h1>
+                    <div class="container">
+                        <div class="gourmand">
+                            <div class="image">
+                                <img src="{{asset('img/cuisine.jpg')}}" alt="Famille qui cuisine">
+                            </div>
+                            <div class="containerText">
+                                <h3>Défi gourmand</h3>
+                            </div>
+                        </div>
+                        <div class="fun">
+                            <div class="image">
+                                <img src="{{asset('img/fun.jpg')}}"
+                                    alt="4 personnes qui sont heureuses avec une coupe">
+                            </div>
+                            <div class="containerText">
+                                <h3>Défi fun</h3>
+                            </div>
+                        </div>
+                        <div class="zen">
+                            <div class="image">
+                                <img src="{{asset('img/Zen.jpg')}}"
+                                    alt="Illustration d'une personne faisant la position de yoga dite de l'arbe">
+                            </div>
+                            <div class="containerText">
+                                <h3>Défi zen</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn jaune">Je veux plus de défis</a>
+                </div>
+            </section>
+
+            <!--************************Concept****************************-->
+            <section id="concept">
+                <div>
+                    <h1>Notre concept</h1>
+                    <div>
+                        <div id="paragraph_concept">
+                            <img src="{{asset('img/clou_jaune.svg')}}" alt="décoration jaune">
+                            <div>
+                                <h2>Rejoignez-nous dès aujourd'hui et transformez votre vie de parent</h2>
+                                <p>Notre site regorge de trésors d'activités qui non seulement vous font gagner du
+                                    temps,
+                                    mais aussi apaisent les tensions à la maison. Imaginez des journées sans disputes,
+                                    des sourires sincères et des souvenirs précieux avec vos enfants.
+                                    Inscrivez-vous maintenant pour une expérience parentale plus harmonieuse et
+                                    épanouissante.
+                                    Laissez-nous vous montrer comment la simplicité peut créer la joie.
+                                </p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn jaune">je crée un compte</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+    {% endblock %}

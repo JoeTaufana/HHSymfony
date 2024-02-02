@@ -1,0 +1,71 @@
+.creation{
+    border: 1px solid #BF5F56
+;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px auto;
+    padding-bottom: 10px;
+    box-shadow: 4px 4px 10px grey;
+    width: 500px;
+    color: #000;
+    opacity: 75%;
+    font-family: Quicksand;
+    font-family: 16px;
+    font-weight: bold;
+}.creation>h2{
+    margin: 20px;/*l'espace autour de h1 */
+    color: var(--vert);/*couleur de la typographie de h1*/
+    font-size: 30px;/*la taille de h1*/
+    font-family: Oswald;/*la typographie de h1*/
+    font-weight: bold;/*l'épaisseur de la typographie de h1*/}.formulaire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;}.creation .formulaire label {
+    color: #000;
+    opacity: 75%;
+}
+.boxgenre{
+    margin-left: 10px;
+}.madame{
+    margin-right: 90px;
+}input, a{
+    margin: 5px;
+    padding-left: 10px;}.creation .formulaire .boxgenre .madame input{
+    border: 1px solid var(--ocre);
+    background-color: var(--rose);
+}.centre{
+    text-align: center;
+    padding-bottom: 10px;
+    margin: 20px 0 20px 0;
+}#nom,#prenom,#mdp2,#confmdp,#mail2,#anniversaire,#mail,#mdp{
+    width: 420px;
+    height: 45px;
+    border: 1px solid #BF5F56
+;
+    border-radius: 10px;
+}#nom,#prenom,#mdp2,#confmdp,#mail2{
+    margin-top: 24px;
+}#validation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 0 0;
+    width: 464px;
+}/* .pcreation{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+} */#oubli{
+    margin: 5px 5px 15px 15px;
+}.creation .formulaire .btn ocre valider {
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: var(--ocre);
+    color: white;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-family: Oswald;}

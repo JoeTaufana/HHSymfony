@@ -1,0 +1,602 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration:none;
+}
+
+/******************fonts*************************************/
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand-Light.eot');
+    src: url('../fonts/Quicksand-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Quicksand-Light.woff2') format('woff2'),
+        url('../fonts/Quicksand-Light.woff') format('woff'),
+        url('../fonts/Quicksand-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand-Light_1.eot');
+    src: url('../fonts/Quicksand-Light_1.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Quicksand-Light_1.woff2') format('woff2'),
+        url('../fonts/Quicksand-Light_1.woff') format('woff'),
+        url('../fonts/Quicksand-Light_1.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand-Light_2.eot');
+    src: url('../fonts/Quicksand-Light_2.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Quicksand-Light_2.woff2') format('woff2'),
+        url('../fonts/Quicksand-Light_2.woff') format('woff'),
+        url('../fonts/Quicksand-Light_2.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand-Light_3.eot');
+    src: url('../fonts/Quicksand-Light_3.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Quicksand-Light_3.woff2') format('woff2'),
+        url('../fonts/Quicksand-Light_3.woff') format('woff'),
+        url('../fonts/Quicksand-Light_3.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Regular.eot');
+    src: url('../fonts/Oswald-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Oswald-Regular.woff2') format('woff2'),
+        url('../fonts/Oswald-Regular.woff') format('woff'),
+        url('../fonts/Oswald-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Regular_1.eot');
+    src: url('../fonts/Oswald-Regular_1.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Oswald-Regular_1.woff2') format('woff2'),
+        url('../fonts/Oswald-Regular_1.woff') format('woff'),
+        url('../fonts/Oswald-Regular_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Regular_2.eot');
+    src: url('../fonts/Oswald-Regular_2.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Oswald-Regular_2.woff2') format('woff2'),
+        url('../fonts/Oswald-Regular_2.woff') format('woff'),
+        url('../fonts/Oswald-Regular_2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Regular_3.eot');
+    src: url('../fonts/Oswald-Regular_3.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Oswald-Regular_3.woff2') format('woff2'),
+        url('../fonts/Oswald-Regular_3.woff') format('woff'),
+        url('../fonts/Oswald-Regular_3.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+h1{
+    font-family: 'Oswald';
+    font-size: 66px;
+    font-weight: bold;
+}
+h2{
+    font-family: 'Oswald';
+    font-size: 20px;
+    font-weight: bold;
+}
+h3{
+    font-family: 'Oswald';
+    font-size: 16px;
+    font-weight: bold;
+}
+p{
+    font-family: 'Quicksand';
+    font-size: 16px;
+    font-weight: bold;
+}
+/**************************body**************************/
+
+body{
+    background: #F2F2F2;
+    
+}
+
+.btn{
+    text-transform: uppercase;
+    border-radius: 12px;
+    padding: 10px 20px;    
+}
+
+.jaune{
+    background-color: #F2B705;
+    color: #385A64;
+}
+
+.vert{
+    background-color: #385A64;
+    color: #F2F2F2;
+}
+
+
+.ocre{
+    background-color: #BF5F56;
+    color: #F2F2F2;
+}
+
+/***********************************************
+                header 
+*************************************************/
+
+
+header{
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    box-sizing: border-box;
+}
+
+#logo{
+    height: 55px;
+    margin-top: 5px;
+}
+
+#logo>img{
+    height: 100%;
+}
+ 
+header>nav{
+    height: 65px;
+    width: 40%;
+    margin-right: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;   
+}
+
+header>nav>ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;   
+}
+
+header>nav>ul li{
+margin: 0 5px;
+}
+
+header>nav ul li a{
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: capitalize;  
+    border-radius: 15px 15px 0 0;
+
+}
+
+.fd-bleu{
+    background-color: #385a64;
+    color: #F2B705;
+}
+.fd-jaune{
+    background-color: #F2B705;
+    color: #385a64;
+}
+
+.fd-ocre{
+    background-color: #BF5F56;
+    color: #F2F2F2;
+}
+
+header>nav ul li a:hover{
+    opacity: 20%; 
+}
+
+#photo_profil{
+    width: 35px;
+    height: 35px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+    border: #f2a29b solid 5px;
+}
+
+#photo_profil img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+/**** style popup *****/
+#photo_profil button{
+    border-radius: 50%;
+    width: 100%;
+}
+
+#popupNav{
+    width: 100%;
+    max-width: 240px;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#popupNav h2{
+    text-align: center;
+    margin: 20px auto;
+}
+
+/****** fin header******/
+
+
+/***************************************************
+                      footer
+***************************************************/
+footer{
+    padding: 50px 0;
+    background: #BF5F56;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#logo_white{
+    width: 125px;
+    height: 100px;
+}
+
+#logo_white>img{
+    width: 100%;
+}
+#liens{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+#liens ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: wrap;
+}
+#liens ul li a{
+    color: #F2F2F2;
+    font-weight: bold;
+}
+#liens div{
+    margin: 0 20px;
+}
+#reseaux{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+#reseaux a{
+    margin:0 15px;
+}
+/*****responsive 900px******/
+@media screen and (max-width:900px){
+    .droite{
+        display: none;
+    }
+    #home{
+        height: auto;
+    }
+
+
+}
+/****** fin 900px*************/
+/*****responsive 300px******/
+
+
+@media screen and (max-width:500px){
+   
+
+    #home{
+        background: none;
+    }
+    
+    .gauche img{
+        display: none;
+    }
+
+    #decouverte{
+        background: none;
+    }
+
+    #decouverte>div a div{
+        width: 100px;
+        height: 100px;
+
+    }
+
+    #paragraph_concept img{
+        display: none;
+    }
+
+#concept{
+        background: none;
+    }
+
+}
+/****** fin 300px*************/
+/************************************************************************************************
+                                            Admin_Users
+*************************************************************************************************/
+#admin_users{
+    width: 100%;
+    height: 100vh; 
+    padding-top: 5%;
+    background: url(../img/Splash.svg) -10% 25%,
+                url(../img/EllipseVert.svg) 110% 75%;            
+    background-repeat: no-repeat;
+}
+
+#admin_users > section{
+    width: 75%;
+    height: 80%;
+    margin: auto;
+}
+#admin_users_container{
+    display: flex;
+    height: 100%;
+}
+
+#admin_users_gauche{
+    width: 50%;
+    height: 100%;
+    padding-top: 5%;
+    color: #385A64;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#admin_users_gauche>div h1{
+    padding-bottom: 5%;
+}
+
+#admin_users_gauche div:nth-child(2) h3{
+   padding-bottom: 5%; 
+}
+
+#admin_users_droite{
+    width: 49%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search_bar{
+    width: 60%;
+    height: 40px;
+    border-radius: 15px;
+}
+
+.users_img{
+    border: 3px solid #BF5F56;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin:10%;
+}
+
+#admin_usersButtonContainer{
+    width: 100%;
+    display: flex;
+}
+
+#admin_usersButtonContainer a{
+    margin: 0 auto;
+}
+
+/************************************************************************************************
+                                        Page Admin défi
+************************************************************************************************/
+
+#admin_img_defi{
+    border: #F2B705 2px solid;
+    border-radius: 25px;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 45%;
+}
+
+#admin_users_descript{
+    border: #F2B705 2px solid;
+    border-radius: 25px;
+    width: 80%;
+    height: 60%;
+    padding: 5%;
+    color: #385A64;
+}
+
+/************************************************************************************
+                                Accueil Admin 
+*************************************************************************************/
+
+#admin_accueil_main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: url(../img/Splash.svg)0 0,
+                url(../img/Ellipse_gras_ocre.svg) -3% 70%;
+    background-repeat: no-repeat;
+}
+
+#admin_accueil_main .carte{
+    border: #385A64 2px solid;
+    border-radius: 25px;
+    box-shadow: 5px 5px #385A64;
+    width: 350px;
+    height: 250px;
+    color: #385A64;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#admin_accueil_main .carte h1{
+    text-align: center;
+}
+
+#admin_accueil_main .carte li{
+    padding: 30px ;
+}
+
+#admin_accueil_main .carte a{
+    text-align: center;
+    margin: auto;
+}
+
+/************************************************************************************************************************
+                                                         blog_article
+************************************************************************************************************************/
+
+#blog_article_main{
+    padding: 0 3%;
+}
+/*********************Section top*************************/
+#blog_article_head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #385A64;
+}
+#blog_article_boutons{
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+#blog_article_title_article{
+    margin-bottom: 50px;
+}
+#blog_article_title_article>h1{
+    color: #bf5f56;
+    font-size: 55px;
+}
+
+#blog_article_title_article>p{
+    color: #385A64;
+    padding: 1% 0;
+}
+
+#blog_article_photo_legende{
+    display: flex;
+    
+}
+#blog_article_photo_legende div{
+    width: 75%;  
+}
+
+#blog_article_photo_legende div>img{
+    width: 100%;
+    height: 100%;
+}
+
+#blog_article_photo_legende p{
+    padding: 0 2%;
+    width: 25%;
+    text-align: justify;
+    color: #385A64;
+}
+
+
+/******************** deuxième section********************/
+
+
+#blog_article_bottom{
+    margin: 50px 0;
+    display: flex;
+    color: #385A64;
+}
+#blog_article_bottom h2{
+    margin-bottom: 20px;
+}
+#blog_article_bottom h3{
+    margin-top: 20px;
+}
+
+#blog_article_bottom article{
+    width: 75%;
+    padding-right: 3%;
+    text-align: justify;
+}
+
+
+/******************aside **************************/
+
+#blog_article_liste_article_aside{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+.blog_article_carte_article{
+    position: relative;
+    
+}
+
+
+.blog_article_carte_article a{
+    position: absolute;
+    bottom: 1%;
+    left: 1%;
+    color: #F2F2F2;
+    transition: color 0.3s;
+    
+}
+
+/* Changement de couleur du lien lorsqu'il est survolé */
+.blog_article_carte_article img:hover + a {
+    color: #385A64; /* Changez ici la couleur souhaitée au survol de l'image */
+}
+
+/* Pour l'image à l'intérieur de la carte d'article de blog lorsqu'elle est survolée */
+.blog_article_carte_article img:hover {
+    opacity: 0.2; /* Changez ici l'opacité souhaitée au survol de l'image (20% dans votre exemple) */
+}
+

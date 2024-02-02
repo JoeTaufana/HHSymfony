@@ -1,0 +1,178 @@
+/***************************************************
+                      Main
+***************************************************/
+/***************************************************
+                      Gain de temps
+***************************************************/
+#home{
+    padding: 50px 10%;
+    color: #385A64;
+    display: flex;
+    flex-wrap: wrap;
+    background: url(../img/Splash.svg) bottom right, 
+                url(../img/Ellipse_gras_ocre.svg) 100% 25%,
+                url(../img/Ellipse_gras_jaune.svg) 0 35%;
+    background-repeat: no-repeat;
+}
+
+#home>div{
+    flex: 1 300px;/* chaque div utilise 1 part égale du parent 
+    et elle passe à la ligne à 300px (ne pas oublier flex-wrap
+    sur le parent*/
+}
+#clou_jaune{
+    margin: 0 20px;
+}
+
+#home>div>div{
+    display: flex;
+    width: 80%;
+    margin-top: 150px;
+    margin-bottom: 30px;
+}
+
+#paragraphe_home h2{
+    margin-bottom: 10px;   
+}
+
+#paragraphe_home p{
+    text-align: justify;
+}
+.gauche h1{
+    transform: rotate(-15deg);
+    text-align: center;
+    margin: 60px 0px;
+}
+.gauche a{
+    margin: 8%;
+}
+.gauche h2{
+    margin-bottom: 50px; 
+}
+.droite{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.droite>div img{
+    width: 100%;
+    mix-blend-mode: darken;
+}
+
+/***************Fin Gain temps*********************/
+
+/***************************************************
+                 Partie Animation
+***************************************************/
+
+#defis{
+    padding: 50px 10%;
+    color: #385A64;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container{
+    display: flex;
+}
+
+.gourmand,.zen,.fun{
+    width: 300px;
+    height: 403px;
+    margin: 60px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+}
+.gourmand{
+    background-color: #BF5F56;
+}
+.fun{
+    background-color: #F2B705;
+}
+.zen{
+    background-color: #385A64;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    border-radius: 20px;
+}
+
+.image img{
+    border-radius: 20px;
+    border: #F2F2F2 1px solid;
+}
+
+.containerText{
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    width: 261px;
+    height: 90px;
+    align-items: center;
+    margin: 40px auto;
+    border-radius: 24px;
+}
+
+#defis div h3{
+    color: #385A64;
+    text-transform: uppercase;
+}
+
+.conteneur{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/******************Fin Animation*******************/
+
+/***************************************************
+                    Partie Concept
+***************************************************/
+#concept{
+    padding: 50px 10%;
+    color: #385A64;
+    margin-bottom: 100px;
+}
+#concept>div{
+    display: flex;
+    flex-wrap: wrap;
+}
+#concept>div h1{
+    flex: 1 300px;   
+}
+
+#concept h1{
+    text-align: center;
+    margin: 0 0 60px 0
+}
+#concept>div>div{
+    flex: 1 300px;
+}
+#concept>div>div>a{
+    margin: 0 7%
+}
+#paragraph_concept{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+#paragraph_concept>div>h2{
+    margin-bottom: 10px; 
+}
+
+#paragraph_concept>img{
+    margin: 0 20px;
+    padding-left: 10px;
+}
+
+#paragraph_concept p{
+    text-align: justify;
+}
+
+/*******************Fin Concept********************/
