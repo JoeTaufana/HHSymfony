@@ -1,0 +1,282 @@
+
+
+main{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    background: #F2F2F2;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration:none;
+}
+
+.btn Ocre Valider{
+    text-transform: uppercase;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-weight: bold; 
+    background-color: #BF5F56;
+    color: #F2F2F2;  
+    border: none; 
+}
+
+.jaune{
+    background-color: #F2B705;
+    color: #385A64;
+}
+
+.vert{
+    background-color: #385A64;
+    color: #F2F2F2;
+}
+
+.ocre{
+    background-color: #BF5F56;
+    color: #F2F2F2;
+}
+
+
+/***************************************************
+                      header
+***************************************************/
+header{
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    box-sizing: border-box;
+}
+
+#logo{
+    height: 55px;
+    margin-top: 5px;
+}
+
+#logo>img{
+    height: 100%;
+}
+ 
+header>nav{
+    height: 65px;
+    width: 40%;
+    margin-right: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;   
+}
+
+header>nav>ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;   
+}
+
+header>nav>ul li{
+margin: 0 5px;
+}
+
+header>nav ul li a{
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: capitalize;  
+    border-radius: 15px 15px 0 0;
+}
+
+.fd-bleu{
+    background-color: #385a64;
+    color: #F2B705;
+}
+.fd-jaune{
+    background-color: #F2B705;
+    color: #385a64;
+}
+.fd-ocre{
+    background-color: #BF5F56;
+    color: #F2F2F2;
+}
+
+header>nav ul li a:hover{
+    opacity: 20%; 
+}
+
+#photo_profil{
+    width: 35px;
+    height: 35px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+    border: #f2a29b solid 5px;
+}
+
+#photo_profil img{
+    width: 100%;
+}
+
+/***************************************************
+                Titre et paragraphe
+***************************************************/
+
+h1{
+    font-family: 'Oswald';
+    font-size: 66px;
+    font-weight: bold;
+}
+
+h3{
+    font-family: 'Oswald';
+    font-size: 16px;
+    font-weight: bold;
+}
+p{
+    font-family: 'Quicksand';
+    font-size: 16px;
+    font-weight: bold;
+    text-align: justify;
+}
+
+/***************************************************
+                      footer
+***************************************************/
+
+footer{
+    padding: 50px 0;
+    background: #BF5F56;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#logo_white{
+    width: 125px;
+    height: 100px;
+}
+
+#logo_white>img{
+    width: 100%;
+}
+
+#liens{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+#liens ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: wrap;
+}
+#liens ul li a{
+    color: #F2F2F2;
+    font-weight: bold;
+}
+#liens div{
+    margin: 0 20px;
+}
+#reseaux{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+#reseaux a{
+    margin:0 15px;
+}
+
+/***************fin footer*********************/
+
+/***************************************************
+                Connexion / Création
+***************************************************/
+
+.creation{
+    width: 300px;
+    margin: 75px auto;
+    background-color: #f2f2f2;
+    border: 1px solid #BF5F56;
+    box-shadow: 4px 4px 10px grey;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: #385A64;
+}
+.creation>h2 {
+    text-align: center;
+    margin: 30px auto;
+    font-family: 'Oswald';
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.creation .formulaire #display_start {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.creation .formulaire #display_start label{
+    margin-left: 12px;
+    color: #000;
+    opacity: 75%;
+    font-size: 16px;
+    font-family: Quicksand;
+    font-weight: bold;
+}
+
+input, a{
+    margin: 5px;
+    color: #f2f2f2;
+} 
+
+input {
+    padding-left: 10px;
+}
+
+#mail2, #mdp2 {
+    margin-bottom: 20px;
+}
+
+
+
+#mail2, #mdp2{
+    border: 1px solid #BF5F56;
+    border-radius: 10px;
+    width: 290px;
+    height: 36px;
+}
+
+.formulaire .btn Ocre Valider {
+    margin-bottom: 20px;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .creation>h2 {
+        font-size: 25px;
+
+    }
+
+    .creation{
+        width: 200px;  
+    }
+
+    #mail2, #mdp2{
+        width: 190px;
+        height: 36px;
+    }
+  }
