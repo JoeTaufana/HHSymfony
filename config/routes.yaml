@@ -3,4 +3,6 @@
 #    controller: App\Controller\DefaultController::index
 site_home:
     path: /
-    controller: App\Controller\IndexController::index
+    controller: App\Controller\IndexController::index 
+
+    
