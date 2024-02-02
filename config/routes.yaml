@@ -2,7 +2,11 @@
 #    path: /
 #    controller: App\Controller\DefaultController::index
 site_home:
-    path: /
-    controller: App\Controller\IndexController::index 
+  path: /
+  controller: App\Controller\IndexController::index
 
-    
+login:
+  path: /login
+  controller: App\Controller\SecurityController::login
+
+
