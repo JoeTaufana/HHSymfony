@@ -8,3 +8,7 @@ site_home:
 login:
   path: /login
   controller: App\Controller\SecurityController::login
+
+registration:
+  path: /register
+  controller: App\Controller\RegistrationController::register
