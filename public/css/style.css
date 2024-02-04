@@ -246,7 +246,7 @@ header>nav ul li a:hover{
     width: 100%;
 }
 
-#popupNav{
+/* #popupNav{
     width: 100%;
     max-width: 240px;
     display: none;
@@ -259,7 +259,7 @@ header>nav ul li a:hover{
 #popupNav h2{
     text-align: center;
     margin: 20px auto;
-}
+} */
 
 /****** fin header******/
 

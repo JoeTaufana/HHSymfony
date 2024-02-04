@@ -1,96 +1,87 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta
-		charset="UTF-8">
+    <head>
+        <meta charset="UTF-8">
+        
+        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/formInscription.css') }}">
+        {# {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %} #}
+    </head>
+    <header>
+    {% block header %}
+        <a href="/index/index.html.twig">
+            <div id="logo">
+                <img src="{{ asset('logo/LOGO.svg') }}" alt="logo">
+            </div>
+        </a>
+        <nav>
+            <ul>
+                <li><a class="fd-bleu" href="{{ asset('templates/agenda.php') }}">
+                        <h2>agenda</h2>
+                    </a></li>
+                <li><a class="fd-jaune" href="#">
+                        <h2>défis</h2>
+                    </a></li>
+                <li><a class="fd-ocre" href="{{ asset('templates/blog_index.php') }}">
+                        <h2>blog</h2>
+                    </a></li>
+                <li>
+                    <div id="photo_profil">
+                        <a onclick="afficherPopup()">
+                            <img src="{{ asset('img/la-personne.png') }}" alt="">
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div id="popupNav">
+            <h2>Preferences</h2>
+            <a href="#">Ma tribu</a>
+            <a href="#">Défis</a>
+            <a href="#" class="deconnexion"></a>
+        </div>
+        <script src="{{ asset('js/popupNav.js') }}"></script>
+        {% endblock %}
+    </header>
+    <body>
+        {% block body %}{% endblock %}
+    </body>
 
-		{# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
-		<link rel="stylesheet" href="{{ asset('css/creation.css') }}">
-		<link rel="stylesheet" href="{{ asset('css/home.css') }}">
-		<link rel="stylesheet" href="{{ asset('css/style.css') }}">
-	{# <link rel="stylesheet" href="{{ asset('css/creation.css') }}"> #}
-		{# {% block javascripts %}
-		            {{ encore_entry_script_tags('app') }}
-		        {% endblock %} #}
-	</head>
-	<header>
-		{% block header %}
-			<a href="/index/index.html.twig">
-				<div id="logo">
-					<img src="{{ asset('logo/LOGO.svg') }}" alt="logo">
-				</div>
-			</a>
-			<nav>
-				<ul>
-					<li>
-						<a class="fd-bleu" href="{{ asset('templates/agenda.php') }}">
-							<h2>agenda</h2>
-						</a>
-					</li>
-					<li>
-						<a class="fd-jaune" href="#">
-							<h2>défis</h2>
-						</a>
-					</li>
-					<li>
-						<a class="fd-ocre" href="{{ asset('templates/blog_index.php') }}">
-							<h2>blog</h2>
-						</a>
-					</li>
-					<li>
-						<div id="photo_profil">
-							<a href="#">
-								<img src="{{ asset('img/la-personne.png') }}" alt="">
-							</a>
-						</div>
-					</li>
-				</ul>
-			</nav>
-
-		{% endblock %}
-	</header>
-	<body>
-		{% block body %}{% endblock %}
-	</body>
-
-
-	{% block footer %}
-		<footer>
-			<div id="logo_white">
-				<img src="{{ asset('logo/LOGO_white.svg') }}" alt=" logo blanc">
-			</div>
-			<div id="liens">
-				<ul>
-					<li>
-						<a href="#">Accueil</a>
-					</li>
-					<li>
-						<a href="#">A propos</a>
-					</li>
-					<li>
-						<a href="#">Conditions d'utilisation</a>
-					</li>
-				</ul>
-				<div>
-					<img src="{{ asset('img/clou.svg') }}" alt="">
-				</div>
-				<ul>
-					<li><a href="#">Confidentialité</a></li>
-					<li><a href="#">Contactez-nous</a></li>
-					<li><a href="#">Mentions légales</a></li>
-				</ul>
-			</div>
-			<div id="reseaux">
-				<div>
-					<a href="#"><img src="{{ asset('icones/instagram.svg') }}" alt="Nous suivre sur instagram"></a>
-				</div>
-				<div>
-					<a href="#"><img src="{{ asset('icones/facebook.svg') }}" alt="Nous suivre sur facebook"></a>
-				</div>
-				<div>
-					<a href="#"><img src="{{ asset('icones/pinterest.svg') }}" alt="Nous suivre sur pinterest"></a>
-				</div>
-			</div>
-		</div>
-	</html>
-</footer>{% endblock footer %}</html>
+    
+        {% block footer %}
+        <footer>   
+        <div id="logo_white">
+            <img src="{{ asset('logo/LOGO_white.svg') }}" alt=" logo blanc">
+        </div>
+        <div id="liens">
+            <ul>
+                <li><a class="footerA" href="#">Accueil</a></li>
+                <li><a class="footerA" href="#">A propos</a></li>
+                <li><a class="footerA" href="#">Conditions d'utilisation</a></li>
+            </ul>
+            <div>
+                <img src="{{ asset('img/clou.svg') }}" alt="">
+            </div>
+            <ul>
+                <li><a class="footerA" href="#">Confidentialité</a></li>
+                <li><a class="footerA" href="#">Contactez-nous</a></li>
+                <li><a href="#">Mentions légales</a></li>
+            </ul>
+        </div>
+        <div id="reseaux">
+            <div><a href="#"><img src="{{ asset('icones/instagram.svg') }}"
+                        alt="Nous suivre sur instagram"></a></div>
+            <div><a href="#"><img src="{{ asset('icones/facebook.svg') }}"
+                        alt="Nous suivre sur facebook"></a></div>
+            <div><a href="#"><img src="{{ asset('icones/pinterest.svg') }}"
+                        alt="Nous suivre sur pinterest"></a></div>
+        </div>
+        </div>
+         
+    </footer>
+    {% endblock footer %}
+</html>
