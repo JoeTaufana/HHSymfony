@@ -16,4 +16,3 @@ logout:
 registration:
   path: /register
   controller: App\Controller\RegistrationController::register
-

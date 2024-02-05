@@ -51,44 +51,37 @@
 		{% block body %}{% endblock %}
 	</body>
 
-
-	{% block footer %}
-		<footer>
-			<div id="logo_white">
-				<img src="{{ asset('logo/LOGO_white.svg') }}" alt=" logo blanc">
-			</div>
-			<div id="liens">
-				<ul>
-					<li>
-						<a href="#">Accueil</a>
-					</li>
-					<li>
-						<a href="#">A propos</a>
-					</li>
-					<li>
-						<a href="#">Conditions d'utilisation</a>
-					</li>
-				</ul>
-				<div>
-					<img src="{{ asset('img/clou.svg') }}" alt="">
-				</div>
-				<ul>
-					<li><a href="#">Confidentialité</a></li>
-					<li><a href="#">Contactez-nous</a></li>
-					<li><a href="#">Mentions légales</a></li>
-				</ul>
-			</div>
-			<div id="reseaux">
-				<div>
-					<a href="#"><img src="{{ asset('icones/instagram.svg') }}" alt="Nous suivre sur instagram"></a>
-				</div>
-				<div>
-					<a href="#"><img src="{{ asset('icones/facebook.svg') }}" alt="Nous suivre sur facebook"></a>
-				</div>
-				<div>
-					<a href="#"><img src="{{ asset('icones/pinterest.svg') }}" alt="Nous suivre sur pinterest"></a>
-				</div>
-			</div>
-		</div>
-	</html>
-</footer>{% endblock footer %}</html>
+    
+        {% block footer %}
+        <footer>   
+        <div id="logo_white">
+            <img src="{{ asset('logo/LOGO_white.svg') }}" alt=" logo blanc">
+        </div>
+        <div id="liens">
+            <ul>
+                <li><a class="footerA" href="#">Accueil</a></li>
+                <li><a class="footerA" href="#">A propos</a></li>
+                <li><a class="footerA" href="#">Conditions d'utilisation</a></li>
+            </ul>
+            <div>
+                <img src="{{ asset('img/clou.svg') }}" alt="">
+            </div>
+            <ul>
+                <li><a class="footerA" href="#">Confidentialité</a></li>
+                <li><a class="footerA" href="#">Contactez-nous</a></li>
+                <li><a href="#">Mentions légales</a></li>
+            </ul>
+        </div>
+        <div id="reseaux">
+            <div><a href="#"><img src="{{ asset('icones/instagram.svg') }}"
+                        alt="Nous suivre sur instagram"></a></div>
+            <div><a href="#"><img src="{{ asset('icones/facebook.svg') }}"
+                        alt="Nous suivre sur facebook"></a></div>
+            <div><a href="#"><img src="{{ asset('icones/pinterest.svg') }}"
+                        alt="Nous suivre sur pinterest"></a></div>
+        </div>
+        </div>
+         
+    </footer>
+    {% endblock footer %}
+</html>
