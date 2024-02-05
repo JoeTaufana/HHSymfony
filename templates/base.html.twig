@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta
-		charset="UTF-8">
+		<meta charset="UTF-8">
+		{% block stylesheets %}
+			<link rel="stylesheet" href="{{asset('css/style.css')}}">
+		{% endblock %}
 
-		<link rel="stylesheet" href="{{ asset('css/connexion.css') }}">
-		<link rel="stylesheet" href="{{ asset('css/creation.css') }}">
-		<link rel="stylesheet" href="{{ asset('css/home.css') }}">
-		<link rel="stylesheet" href="{{ asset('css/style.css') }}">
-	{# <link rel="stylesheet" href="{{ asset('css/creation.css') }}"> #}
+		{# <link rel="stylesheet" href="{{ asset('css/creation.css') }}"> #}
 		{# {% block javascripts %}
-		            {{ encore_entry_script_tags('app') }}
-		        {% endblock %} #}
+				            {{ encore_entry_script_tags('app') }}
+				        {% endblock %} #}
 	</head>
 	<header>
 		{% block header %}
@@ -93,8 +91,4 @@
 			</div>
 		</div>
 	</html>
-</footer>
-{% endblock footer %}
-</html>
-
-	
+</footer>{% endblock footer %}</html>
