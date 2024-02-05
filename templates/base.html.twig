@@ -7,6 +7,7 @@
 		{# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
 		{#<link rel="stylesheet" href="{{ asset('css/creation.css') }}">#}
 		<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+		<script src="{{ asset('js/popupNav.js') }}"></script>
 		{# <link rel="stylesheet" href="{{ asset('css/creation.css') }}"> #}
 
 		{% block stylesheet %}
@@ -18,38 +19,41 @@
 		        {% endblock %} #}
 	</head>
 	<header>
-		{% block header %}
-			<a href="/index/index.html.twig">
-				<div id="logo">
-					<img src="{{ asset('logo/LOGO.svg') }}" alt="logo">
-				</div>
-			</a>
-			<nav>
-				<ul>
-					<li>
-						<a class="fd-bleu" href="{{ asset('templates/agenda.php') }}">
-							<h2>agenda</h2>
-						</a>
-					</li>
-					<li>
-						<a class="fd-jaune" href="#">
-							<h2>défis</h2>
-						</a>
-					</li>
-					<li>
-						<a class="fd-ocre" href="{{ asset('templates/blog_index.php') }}">
-							<h2>blog</h2>
-						</a>
-					</li>
-					<li>
-						<div id="photo_profil">
-							<a href="#">
-								<img src="{{ asset('img/la-personne.png') }}" alt="">
-							</a>
-						</div>
-					</li>
-				</ul>
-			</nav>
+		    {% block header %}
+        <a href="http://localhost/happyhome2/index.php">
+            <div id="logo">
+                <img src="http://localhost/happyhome2/logo/LOGO.svg" alt="logo">
+            </div>
+        </a>
+        <nav id="navbar">
+            <ul>
+                <li><a class="fd-bleu" href="http://localhost/happyhome2/templates/agenda.php">
+                        <h2>agenda</h2>
+                    </a></li>
+                <li><a class="fd-jaune" href="#">
+                        <h2>défis</h2>
+                    </a></li>
+                <li><a class="fd-ocre" href="#">
+                        <h2>blog</h2>
+                    </a></li>
+                <li>
+                    <div id="photo_profil">
+                        <img src="http://localhost/happyhome2/img/la-personne.png" alt="image d'un utilisateur">
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="popupNav" class="ocre">
+            <ul>
+                <li><a href="#">Agenda</a></li>
+                <li><a href="#">défis</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Ma tribu</a></li>
+                <li><a href="#" class="deconnexion">Déconnection</a></li>
+            </ul>
+        </div>
+        <img class="menuBurger" src="http://localhost/happyhome2/img/burger-menu.svg" alt="menu hamburger">
 
 		{% endblock %}
 	</header>
