@@ -1,40 +1,32 @@
 {% extends 'base.html.twig' %}
-{# {% block head %}
-	{{ parent() }}
-	<link rel="stylesheet" href="{{ asset('css/creation.css') }}">
-{% endblock %} #}
-{% block title %}Creation compte
+
+{% block stylesheet %}
+	<link rel="stylesheet" href="{{ asset('css/register.css') }}">
 {% endblock %}
 
-{% block body %}
-{% endblock %}
+{% block title %}Inscription{% endblock %}
+
 
 {% block body %}
 <main>
-<section class="creation">
-<h2>Créer un compte</h2>
- {{ form_errors(registrationForm) }}
-    {{ form_start(registrationForm) }}
-        <div id="display_start">
-            {{ form_row(registrationForm.email) }}
-            {{ form_row(registrationForm.plainPassword, {
-                label: 'Password'
-            }) }}
-            {{ form_row(registrationForm.agreeTerms) }}
-            <button type="submit" class="btn">Register</button>
-        </div>
-    {{ form_end(registrationForm) }}
+<section id="inscription">
+<h2>S'inscrire</h2>
+	{{ form_errors(registrationForm) }}
+		{{ form_start(registrationForm) }}
+			<div id="display_start">
+				{{ form_row(registrationForm.email, {'attr':{'class': 'input'}}) }}
 
-<!-- <form class="formulaire" method="post">
-					<div id="display_start">
-						<label for="mail">Email :</label><br>
-						<input type="email" id="mail2" placeholder="Entrez un email*" name="mail"><br>
-						<label for="password">Mot de passe :</label>
-						<input type="password" id="mdp2" minlength="4" maxlength="20" placeholder="Mot de passe*" name="password">
-					</div>
-				
-					<input class="btn ocre valider" type="submit" value="Valider">
-				</form>-->
+				{{ form_row(registrationForm.plainPassword,{label: 'Mot de passe', 'attr':{'class': 'input'}}) }}	
+
+				{{ form_row(registrationForm.agreeTerms,{label: 'Accepter les conditions', 'attr':{'id': 'caseCocher'}}) }}
+			</div>
+
+			<div id="bouton">
+				<button type="submit" class="btn ocre">Valider</button>
+			</div>
+		{{ form_end(registrationForm) }}
+
+
 			</section>
 		</main>
 
