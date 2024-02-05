@@ -10,7 +10,19 @@
 <main>
 <section class="creation">
 <h2>Créer un compte</h2>
-<form class="formulaire" method="post">
+ {{ form_errors(registrationForm) }}
+    {{ form_start(registrationForm) }}
+        <div id="display_start">
+            {{ form_row(registrationForm.email) }}
+            {{ form_row(registrationForm.plainPassword, {
+                label: 'Password'
+            }) }}
+            {{ form_row(registrationForm.agreeTerms) }}
+            <button type="submit" class="btn">Register</button>
+        </div>
+    {{ form_end(registrationForm) }}
+
+<!-- <form class="formulaire" method="post">
 					<div id="display_start">
 						<label for="mail">Email :</label><br>
 						<input type="email" id="mail2" placeholder="Entrez un email*" name="mail"><br>
@@ -19,7 +31,7 @@
 					</div>
 				
 					<input class="btn ocre valider" type="submit" value="Valider">
-				</form>
+				</form>-->
 			</section>
 		</main>
 

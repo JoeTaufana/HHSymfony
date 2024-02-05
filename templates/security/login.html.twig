@@ -3,7 +3,7 @@
 	{{ parent() }}
 	<link rel="stylesheet" href="{{ asset('css/creation.css') }}">
 {% endblock %} #}
-{% block title %}Creation compte
+{% block title %}Login
 {% endblock %}
 
 {% block body %}
@@ -14,18 +14,19 @@
     {% endif %}
     {% if app.user %}
         <div class="mb-3">
-            You are logged in as {{ app.user.userIdentifier }}, <a href="{{ path('app_logout') }}">Logout</a>
+            You are logged in as {{ app.user.userIdentifier }}, <a href="{{ path('logout') }}">Logout</a>
         </div>
     {% endif %}
 
 		
-				<form class="formulaire" action="../php/inscription.php" method="post">
+				<form class="formulaire" method="post">
 					<div id="display_start">
 						<label for="mail">Email :</label><br>
-						<input type="email" id="mail2" placeholder="Entrez un email*" name="mail"><br>
+						<input type="email" id="mail2" placeholder="Entrez un email*" name="email"><br>
 						<label for="password">Mot de passe :</label>
 						<input type="password" id="mdp2" minlength="4" maxlength="20" placeholder="Mot de passe*" name="password">
 					</div>
+					<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate')}}">
 					<input class="btn ocre valider" type="submit" value="Valider">
 				</form>
 			</section>
