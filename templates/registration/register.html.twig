@@ -1,30 +1,15 @@
 {% extends 'base.html.twig' %}
-
-{% block title %}Register{% endblock %}
-
+{% block title %}Register
+{% endblock %}
 {% block body %}
- <main>
-        <section class="connexion">
-            <h2>Se connecter</h2>
-            <form class="formulaire" action="../php/login.php" method="post">
-                <div id="display">
-                    <label for="mail">Identifiant : </label>
-                        <input type="email" id="mail" name="mail" value="">
-                   
-                    <!--Ajout sécurité front pour le mot de passe-->
-                    <label for="mdp">Mot de passe : </label> 
-                        <input type="password" id="mdp" name="mdp" minlength="12" maxlength="20" value="">
-                        <a id="oubli" href="oublimdp">Mot de passe oublié</a>
-                </div>
-                   
-                    <div id="validation">
-                        <label class="checkbox"><input class="checkbox" type="checkbox" value="false">Se souvenir de moi</label>
-                        <input class="btnValider" type="submit" value="Se connecter">
-                    </div>
-                <div class="centre">
-                    <p>Je n'ai pas encore de compte, <a id="créer" href="../Création compte/creer_compte.html">créer un compte!</a></p>
-                </div>
-            </form>
-        </section>
-    </main>
+	<h1>Register</h1>
+	{{ form_errors(registrationForm) }}
+	{{ form_start(registrationForm) }}
+	{{ form_row(registrationForm.email) }}
+	{{ form_row(registrationForm.plainPassword, {
+            label: 'Password'
+        }) }}
+	{{ form_row(registrationForm.agreeTerms) }}
+	<button type="submit" class="btn">Register</button>
+	{{ form_end(registrationForm) }}
 {% endblock %}
