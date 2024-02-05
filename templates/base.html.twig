@@ -6,10 +6,25 @@
 			<link rel="stylesheet" href="{{asset('css/style.css')}}">
 		{% endblock %}
 
+<<<<<<< HEAD
 		{# <link rel="stylesheet" href="{{ asset('css/creation.css') }}"> #}
 		{# {% block javascripts %}
 				            {{ encore_entry_script_tags('app') }}
 				        {% endblock %} #}
+=======
+		{# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+		{#<link rel="stylesheet" href="{{ asset('css/creation.css') }}">#}
+		<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+		{# <link rel="stylesheet" href="{{ asset('css/creation.css') }}"> #}
+
+		{% block stylesheet %}
+
+		{% endblock %}
+
+		{# {% block javascripts %}
+		            #{{ encore_entry_script_tags('app') }}
+		        {% endblock %} #}
+>>>>>>> 36a9dc88a5b522589904dc3250a43cb9ce63429b
 	</head>
 	<header>
 		{% block header %}
