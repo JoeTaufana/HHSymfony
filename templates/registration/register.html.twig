@@ -8,15 +8,15 @@
 
 {% block body %}
 
-			<h2>Register</h2>
-		{{ form_errors(registrationForm) }}
-		{{ form_start(registrationForm) }}
-		{{ form_row(registrationForm.email, {'label': 'Email:'}) }}
-		{{ form_row(registrationForm.plainPassword, {
+	<h2>Register</h2>
+	{{ form_errors(registrationForm) }}
+	{{ form_start(registrationForm) }}
+	{{ form_row(registrationForm.email, {'label': 'Email:'}) }}
+	{{ form_row(registrationForm.plainPassword, {
 				label: 'Password:'
 			}) }}
-		{{ form_row(registrationForm.agreeTerms) }}
-		<button type="submit" class="btn">Register</button>
-		{{ form_end(registrationForm) }}
+	{{ form_row(registrationForm.agreeTerms) }}
+	<button type="submit" class="btn">Register</button>
+	{{ form_end(registrationForm) }}
 
 {% endblock %}
