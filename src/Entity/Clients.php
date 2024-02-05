@@ -38,6 +38,10 @@ class Clients
     #[ORM\Column(nullable: true)]
     private ?int $nombreEnfant = null;
 
+    #[ORM\OneToOne(cascade: ['persist', 'remove'])]
+    #[ORM\JoinColumn(nullable: false)]
+    private ?User $user = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -135,6 +139,18 @@ class Clients
     public function setNombreEnfant(?int $nombreEnfant): static
     {
         $this->nombreEnfant = $nombreEnfant;
+
+        return $this;
+    }
+
+    public function getUser(): ?User
+    {
+        return $this->user;
+    }
+
+    public function setUser(User $user): static
+    {
+        $this->user = $user;
 
         return $this;
     }
