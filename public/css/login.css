@@ -196,7 +196,7 @@ footer{
 /***************fin footer*********************/
 
 /***************************************************
-        Connexion/Creation
+                    connexion
 ***************************************************/
 
 .connexion{
@@ -213,7 +213,7 @@ footer{
 .connexion h2{
     text-align: center;
     margin: 20px auto;
-      font-family: 'Oswald';
+    font-family: 'Oswald';
     font-size: 30px;
     font-weight: bold;
 }
@@ -221,55 +221,39 @@ footer{
 .formulaire{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    padding: 30px;
     max-width: 570px;
 }
 
-.connexion .formulaire label{
+.formulaire label{
     color: #000;
-    opacity: 75%;
+    opacity: 55%;
     font-size: 16px;
     font-family: Quicksand;
     font-weight: bold;
-    margin-left: 10px;
+    margin-left: 15px;
 } 
-
-input, a{
-    margin: 5px;
-    color: #f2f2f2;
-}
-
-
-
-.centre{
-    text-align: center;
-    margin: 20px 0 20px 0;
-}
-
-#mail,#mdp{
-    width: 464px;
-    max-width: 500px;
-    height: 45px;
-    border: 1px solid #BF5F56;
-    border-radius: 10px;
-}
-
-#mail {
-    margin-bottom: 20px;
-}
-
-
-#validation{
+.form-group{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 0 0 0;
-    width: 464px;
+    flex-direction: column;
+    justify-content: flex-start;
+
 }
 
 
-#oubli{
-    margin: 5px 5px 15px 15px;
+#inputEmail, #inputPassword{
+  padding: 5px;
+  margin: 5px;
+  margin-left: 10px;
+  background-color: #f2f2f2;
+  color: #385A64;
+  border: 1px solid #BF5F56;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 460px;
+  height: 36px;
 }
 
 .btnValider {
@@ -283,11 +267,16 @@ input, a{
 
 }
 
+
 @media only screen and (max-width: 600px) {
    
 
     .connexion {
         width: 250px;  
+    }
+
+    input {
+        width: 100%;
     }
 
     #validation{
@@ -296,8 +285,5 @@ input, a{
         
     }
 
-    #mail, #mdp {
-        width: 240px;
-        height: 36px;
-    }
+   
   }
