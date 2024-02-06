@@ -247,6 +247,11 @@ header>nav ul li a:hover{
     display: none;
 }
 
+#popupPhoto{
+    width: 200px;
+    display: none;
+}
+
 .menuBurger{
     display: none;
     width: 35px;
