@@ -5,9 +5,10 @@
 		charset="UTF-8">
 
 		{# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
-		{#<link rel="stylesheet" href="{{ asset('css/creation.css') }}">#}
+		
 		<link rel="stylesheet" href="{{ asset('css/style.css') }}">
-		<script src="{{ asset('js/popupNav.js') }}"></script>
+		
+		{#<link rel="stylesheet" href="{{ asset('css/creation.css') }}">#}
 		{# <link rel="stylesheet" href="{{ asset('css/creation.css') }}"> #}
 
 		{% block stylesheet %}
@@ -38,7 +39,7 @@
                     </a></li>
                 <li>
                     <div id="photo_profil">
-                        <img src="http://localhost/happyhome2/img/la-personne.png" alt="image d'un utilisateur">
+                        <img src="{{asset('img/la-personne.png')}}" alt="image d'un utilisateur">
                     </div>
                 </li>
             </ul>
@@ -53,12 +54,13 @@
                 <li><a href="#" class="deconnexion">Déconnection</a></li>
             </ul>
         </div>
-        <img class="menuBurger" src="http://localhost/happyhome2/img/burger-menu.svg" alt="menu hamburger">
+        <img class="menuBurger" src="{{asset('img/burger-menu.svg')}}" alt="menu hamburger">
 
 		{% endblock %}
 	</header>
 	<body>
 		{% block body %}{% endblock %}
+		<script src="{{ asset('js/popupNav.js') }}"></script>
 	</body>
 
 
