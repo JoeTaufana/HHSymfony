@@ -21,14 +21,14 @@
 	</head>
 	<header>
 		    {% block header %}
-        <a href="http://localhost/happyhome2/index.php">
+        <a href="{{ path('site_home') }}">
             <div id="logo">
                 <img src="{{asset('logo/LOGO.svg')}}" alt="logo">
             </div>
         </a>
         <nav id="navbar">
             <ul>
-                <li><a class="fd-bleu" href="http://localhost/happyhome2/templates/agenda.php">
+                <li><a class="fd-bleu" href="#">
                         <h2>agenda</h2>
                     </a></li>
                 <li><a class="fd-jaune" href="#">
@@ -48,13 +48,14 @@
         <div id="popupNav" class="ocre">
             <ul>
                 <li><a href="#">Agenda</a></li>
-                <li><a href="#">défis</a></li>
+                <li><a href="#">Défis</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Ma tribu</a></li>
-                <li><a href="#" class="deconnexion">Déconnection</a></li>
+				<li><a href="#">Mon profil</a></li>
+                <li><a href="{{ path('logout') }}" class="deconnexion">Déconnection</a></li>
             </ul>
         </div>
-        <img class="menuBurger" src="{{asset('img/burger-menu.svg')}}" alt="menu hamburger">
+        <img class="menuBurger" src="{{path('site_home')}}" alt="menu hamburger">
 
 		{% endblock %}
 	</header>
@@ -72,7 +73,7 @@
 			<div id="liens">
 				<ul>
 					<li>
-						<a href="#">Accueil</a>
+						<a href="{{ asset('js/popupNav.js') }}">Accueil</a>
 					</li>
 					<li>
 						<a href="#">A propos</a>
