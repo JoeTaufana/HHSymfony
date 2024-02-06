@@ -15,3 +15,7 @@ logout:
 registration:
   path: /register
   controller: App\Controller\RegistrationController::register
+
+clients:
+  path: /clients
+  controller: App\Controller\ClientsController::clients

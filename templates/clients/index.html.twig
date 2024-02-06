@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {{ form_start(Clients) }}
+            {{ form_row(Clients.prenom) }}
+            {{ form_row(Clients.nom) }}
+            <button type="submit" class="btn">Register</button>
+    {{ form_end(Clients) }}
+{% endblock %}
