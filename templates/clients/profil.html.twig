@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {{ form_start(ClientUser) }}
+            {{ form_row(ClientUser.prenom) }}
+            {{ form_row(ClientUser.nom) }}
+            {{ form_row(ClientUser.telephone) }}
+            {{ form_row(ClientUser.optInSms) }}
+            {{ form_row(ClientUser.optInMail) }}
+            {{ form_row(ClientUser.dateNaissance) }}
+            {{ form_row(ClientUser.nombreEnfant) }}
+            {{ form_row(ClientUser.save) }}
+            
+
+            
+            
+            
+    {{ form_end(ClientUser) }}
+{% endblock %}
