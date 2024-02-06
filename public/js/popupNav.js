@@ -22,10 +22,9 @@ if (btnMenu) {
   btnMenu.addEventListener("click", menu);
 }
 
-
 //Création d'une fonction nommée menu2 pour appuyer sur la photo
 function menu2() {
-  // Sélection de l'élément avec la class "popupNav"
+  // Sélection de l'élément avec la class "popupPhoto"
   var popupPhoto = document.getElementById("popupPhoto");
 
   // Vérification du style actuel de l'élément
@@ -34,7 +33,7 @@ function menu2() {
     popupPhoto.style.display = "none";
   } else {
     // Sinon, afficher l'élément en définissant le style sur "block"
-    popupNav.style.display = "block";
+    popupPhoto.style.display = "block";
   }
 }
 

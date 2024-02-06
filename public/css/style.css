@@ -236,10 +236,15 @@ header>nav ul li a:hover{
     margin-bottom: 5px;
     border-radius: 50%;
     border: #f2a29b solid 5px;
+    position:relative;
+    z-index: 2;
 }
 
 #photo_profil img{
     width: 100%;
+    position:relative;
+    z-index: 2;
+
 }
 
 #popupNav{
@@ -248,10 +253,27 @@ header>nav ul li a:hover{
 }
 
 #popupPhoto{
+    position: absolute;
+    display: none; /* Masquage de la barre de liens */
+    background-color: #f2a29b;
     width: 200px;
-    display: none;
+    height: 100vh;
+    top: 0;
+    right: 0px;
+    padding-top: 100px;
+    border-bottom-left-radius: 25px;
+    z-index: 1;
 }
 
+#popupPhoto ul{
+    display: flex;
+    flex-direction: column; /* Affichage des éléments de la liste en colonne pour le menu */
+    align-items: center; /* Alignement central des éléments de la liste */
+}
+
+#popupPhoto ul li{
+    margin: 25px 0; /* Marges top et bottom pour les éléments de la liste */
+}
 .menuBurger{
     display: none;
     width: 35px;
@@ -320,6 +342,7 @@ footer{
     .droite{
         display: none;
     }
+
     #home{
         height: auto;
     }
@@ -333,12 +356,13 @@ footer{
         display: none;
     }
 
+
     #popupNav{
         position: absolute;
         display: none; /* Masquage de la barre de liens */
         background-color: #f2a29b;
         width: 200px;
-        height: 60vh;
+        height: 100vh;
         top: 0;
         right: 0px;
         padding-top: 100px;

@@ -27,16 +27,7 @@
             </div>
         </a>
 
-		<nav id="navdéco">
-            <ul>
-                <li><a class="fd-ocre" href="{{ path('registration') }}">
-                        <h2>Inscription</h2>
-                    </a></li>
-                <li><a class="fd-ocre" href="{{ path('login') }}">
-                        <h2>Connection</h2>
-                    </a></li>
-		{% if app.user %}
-        
+		
         <nav id="navbar">
             <ul>
                 <li><a class="fd-bleu" href="#">
@@ -56,29 +47,27 @@
             </ul>
         </nav>
 
-		<div id="popupPhoto" class="ocre">
-            <ul>
+		<div id="popupPhoto">
+			<ul>				
+			    <li><a href="{{ path('login') }}">Connexion</a></li>
                 <li><a href="#">Ma tribu</a></li>
 				<li><a href="#">Mon profil</a></li>
-                <li><a href="{{ path('logout') }}" class="deconnexion">Déconnection</a></li>
+                <li><a href="{{ path('logout') }}" class="deconnexion">Déconnexion</a></li>
             </ul>
         </div>
 
-        <div id="popupNav" class="ocre">
+        <div id="popupNav">
             <ul>
+				<li><a href="{{ path('login') }}">Connexion</a></li>
                 <li><a href="#">Agenda</a></li>
                 <li><a href="#">Défis</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Ma tribu</a></li>
 				<li><a href="#">Mon profil</a></li>
-                <li><a href="{{ path('logout') }}" class="deconnexion">Déconnection</a></li>
+                <li><a href="{{ path('logout') }}" class="deconnexion">Déconnexion</a></li>
             </ul>
         </div>
         <img class="menuBurger" src="{{asset('img/burger-menu.svg')}}" alt="menu hamburger">
-    	<div class="mb-3">
-            You are logged in as {{ app.user.userIdentifier }}, <a href="{{ path('logout') }}">Logout</a>
-        </div>
-		{% endif %}
 		{% endblock %}
 	</header>
 	<body>
@@ -126,4 +115,6 @@
 			</div>
 		</div>
 	</html>
-</footer>{% endblock footer %}</html>
+</footer>
+{% endblock footer %}
+</html>
