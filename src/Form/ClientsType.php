@@ -7,8 +7,9 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
-use Symfony\Component\Form\Extension\Core\Type\StringType;
-use Symfony\Component\Form\Extension\Core\Type\BooleanType;
+//use Symfony\Component\Form\Extension\Core\Type\TelefonType;
+//use Symfony\Component\Form\Extension\Core\Type\EmailType;
+//use Symfony\Component\Form\Extension\Core\Type\BooleanType;
 use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
@@ -21,10 +22,10 @@ class ClientsType extends AbstractType
         $builder
             ->add('prenom', TextType::class)
             ->add('nom', TextType::class)
-            ->add('telephone', StringType::class)
-            ->add('photoProfil', StringType::class)
-            ->add('optInSms', BooleanType::class)
-            ->add('optInMail', BooleanType::class)
+            //->add('telephone', TelefonType::class)
+            //->add('photoProfil', TextType::class)
+            //->add('optInSms', BooleanType::class)
+            //->add('optInMail', BooleanType::class)
             ->add('dateNaissance', DateType::class)
             ->add('nombreEnfant', IntegerType::class)
             ->add('save', SubmitType::class)
