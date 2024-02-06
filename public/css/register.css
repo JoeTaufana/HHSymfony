@@ -5,7 +5,7 @@ main{
                 url(../img/Splash.svg) 100% 100%,
                 url(../img/EllipseVert.svg) 105% 65%,
                 url(../img/Ellipse_gras_jaune.svg) 0% 55%,
-                url(../img/Ellipse_gras_ocre.svg) 20% 85%;                ;
+                url(../img/Ellipse_gras_ocre.svg) 20% 85%;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
@@ -28,9 +28,6 @@ main{
 #inscription h2{
     text-align: center;
     margin: 30px auto;
-    font-family: 'Oswald';
-    font-size: 30px;
-    font-weight: bold;
     letter-spacing: 2px;
     color: #385A64;
 }
@@ -51,10 +48,9 @@ main{
 }
 
 
-
-
 #bouton{
     text-align: end;
+    margin-bottom: 5%;
 }
 
 
