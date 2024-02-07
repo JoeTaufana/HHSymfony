@@ -5,9 +5,10 @@
 		charset="UTF-8">
 
 		{# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
-		{#<link rel="stylesheet" href="{{ asset('css/creation.css') }}">#}
+		
 		<link rel="stylesheet" href="{{ asset('css/style.css') }}">
-		<script src="{{ asset('js/popupNav.js') }}"></script>
+		
+		{#<link rel="stylesheet" href="{{ asset('css/creation.css') }}">#}
 		{# <link rel="stylesheet" href="{{ asset('css/creation.css') }}"> #}
 
 		{% block stylesheet %}
@@ -20,14 +21,16 @@
 	</head>
 	<header>
 		    {% block header %}
-        <a href="http://localhost/happyhome2/index.php">
+        <a href="{{ path('site_home') }}">
             <div id="logo">
-                <img src="http://localhost/happyhome2/logo/LOGO.svg" alt="logo">
+                <img src="{{asset('logo/LOGO.svg')}}" alt="logo">
             </div>
         </a>
+
+		
         <nav id="navbar">
             <ul>
-                <li><a class="fd-bleu" href="http://localhost/happyhome2/templates/agenda.php">
+                <li><a class="fd-bleu" href="#">
                         <h2>agenda</h2>
                     </a></li>
                 <li><a class="fd-jaune" href="#">
@@ -38,27 +41,38 @@
                     </a></li>
                 <li>
                     <div id="photo_profil">
-                        <img src="http://localhost/happyhome2/img/la-personne.png" alt="image d'un utilisateur">
+                        <img src="{{asset('img/la-personne.png')}}" alt="image d'un utilisateur">
                     </div>
                 </li>
             </ul>
         </nav>
 
-        <div id="popupNav" class="ocre">
-            <ul>
-                <li><a href="#">Agenda</a></li>
-                <li><a href="#">défis</a></li>
-                <li><a href="#">Blog</a></li>
+		<div id="popupPhoto">
+			<ul>				
+			    <li><a href="{{ path('login') }}">Connexion</a></li>
                 <li><a href="#">Ma tribu</a></li>
-                <li><a href="#" class="deconnexion">Déconnection</a></li>
+				<li><a href="#">Mon profil</a></li>
+                <li><a href="{{ path('logout') }}" class="deconnexion">Déconnexion</a></li>
             </ul>
         </div>
-        <img class="menuBurger" src="http://localhost/happyhome2/img/burger-menu.svg" alt="menu hamburger">
 
+        <div id="popupNav">
+            <ul>
+				<li><a href="{{ path('login') }}">Connexion</a></li>
+                <li><a href="#">Agenda</a></li>
+                <li><a href="#">Défis</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Ma tribu</a></li>
+				<li><a href="#">Mon profil</a></li>
+                <li><a href="{{ path('logout') }}" class="deconnexion">Déconnexion</a></li>
+            </ul>
+        </div>
+        <img class="menuBurger" src="{{asset('img/burger-menu.svg')}}" alt="menu hamburger">
 		{% endblock %}
 	</header>
 	<body>
 		{% block body %}{% endblock %}
+		<script src="{{ asset('js/popupNav.js') }}"></script>
 	</body>
 
 
@@ -70,7 +84,7 @@
 			<div id="liens">
 				<ul>
 					<li>
-						<a href="#">Accueil</a>
+						<a href="{{ asset('js/popupNav.js') }}">Accueil</a>
 					</li>
 					<li>
 						<a href="#">A propos</a>
@@ -101,4 +115,6 @@
 			</div>
 		</div>
 	</html>
-</footer>{% endblock footer %}</html>
+</footer>
+{% endblock footer %}
+</html>
