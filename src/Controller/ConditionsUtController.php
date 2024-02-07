@@ -12,7 +12,7 @@ class ConditionsUtController extends AbstractController
      * @Route("/conditionsUt", name="app_conditionsUt")
      */
 
-    public function Propos(): Response
+    public function conditions(): Response
     {
         return $this->render('footer/conditionsUt.html.twig');
     }
