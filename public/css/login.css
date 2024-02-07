@@ -1,3 +1,15 @@
+main{
+    height: 100vh;
+    background: url(../img/Splash.svg) 5% 10%,
+                url(../img/Splash.svg) 90% 15%,
+                url(../img/Splash.svg) 100% 100%,
+                url(../img/EllipseVert.svg) 105% 65%,
+                url(../img/Ellipse_gras_jaune.svg) 0% 55%,
+                url(../img/Ellipse_gras_ocre.svg) 20% 85%;
+    background-repeat: no-repeat;
+
+}
+
 .connexion{
           display: flex;
           flex-direction: column;
@@ -31,6 +43,8 @@
       input {
           margin: 5px;
           background-color: #F2F2F2;
+          
+         
       }
       a{
           margin: 5px;
@@ -43,6 +57,7 @@
           border: 1px solid #BF5F56;
           border-radius: 10px;
           margin-bottom: 20px;
+         
       }
       .connexion button {
           background-color:#BF5F56;

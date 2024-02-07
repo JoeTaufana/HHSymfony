@@ -7,15 +7,13 @@ main{
                 url(../img/Ellipse_gras_jaune.svg) 0% 55%,
                 url(../img/Ellipse_gras_ocre.svg) 20% 85%;
     background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
 }
 
 
 #inscription{
     width: 30%;
-    height: 40%;
+    height: 80%;
     margin: 75px auto;
     border: 1px solid #BF5F56;
     box-shadow: 4px 4px 10px grey;
@@ -28,7 +26,7 @@ main{
 #inscription h2{
     text-align: center;
     margin: 30px auto;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     color: #385A64;
 }
 
