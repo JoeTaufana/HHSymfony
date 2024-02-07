@@ -6,14 +6,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class aProposController extends AbstractController
+class ConditionsUtController extends AbstractController
 {
     /**
-     * @Route("/aPropos", name="app_aPropos")
+     * @Route("/Conditions", name="app_conditions")
      */
-
-    public function Propos(): Response
+    public function conditions(): Response
     {
-        return $this->render('footer/aPropos.html.twig');
+        return $this->render('footer/conditionsUt.html.twig');
     }
 }
