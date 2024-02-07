@@ -110,7 +110,7 @@ main {
     scroll-behavior: smooth;
     background-color: var(--gris); 
     background: url(../img/Splash.svg) 5% 10%,
-    url(../img/Splash.svg) 90% 15%,
+    url(../img/Splash.svg) 90% 25%,
     url(../img/Splash.svg) 100% 100%,
     url(../img/EllipseVert.svg) 105% 65%,
     url(../img/Ellipse_gras_jaune.svg) 0% 55%,
@@ -185,217 +185,104 @@ button{
 }
 /* *******************************Caroussel************************************ */
 /* *************************mettre les images dans le slider*********************************************** */
-#slider{
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    width: 1000px;
-    margin: 0px auto;
-    max-width: 1000px;
-    /* border: 1px solid black; */
 
-}
-
-#sousSliderRow{
-
-    width: 550px;
-    padding: 20px;
-    
-}
-
-
-#imgSousSliderRow{
-    width: 100%;
-   height: 100%;
-   border-radius: 25px;
+* {
+    box-sizing: border-box;
+  }
   
-   margin-left: 35px;
-   
-}
-
-
-#sousSliderColumn{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    padding: 20px;
-    padding-left: 50px;
-}
-
-/* ****************************la première image************************************* */
-
-.divDisplayBloc{
+  img {
+    vertical-align: middle;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
     position: absolute;
-    display: block;
-    background: #000;
-    opacity: 60%;
-    width: 550px;
-    height: 80px;
-    border-radius: 0px 0px 25px 25px;
-    bottom: 21px;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
     color: white;
-    font-family: Oswald;
-    line-height: 1px;
-    padding: 20px;
-    margin-left: 35px;
-    box-sizing: border-box;  
-    position: absolute;
-    }
- 
-    .divDisplayBloc:hover{
-        background: white;
-        opacity: 50%; 
-    }
-
-    .divDisplayBloc #titre a:hover{
-        color: var(--vert);
-        font-weight: 700;
-    }
-
-/* ****************************en commun pour toutes les images********************** */
-
-#titre a{
+    font-weight: bold;
     font-size: 20px;
-    color:var(--gris);
-    line-height: 10px;
-    text-decoration: none;
-    
-}
-
-.titreColumn a{
-    font-size: 20px;
-    color:var(--gris);
-    line-height: 10px;
-    text-decoration: none;
-    
-}
-
-#date {
-    font-size: 15px;
-    margin-left: 20px;
-    margin-top: 20px;
-}
-
-
-.dateColumn{
-    font-size: 15px;
-    /* margin-left: 20px;
-    margin-top: 20px; */
-}
-
-/* ***********************en commun pour les images en colonne************************************** */
-
-.imgSousSlider{
-    width: 100%;
-    border-radius: 25px;
-    
-}
-/* **********************image_basketteur********************************************** */
-
-
-#displayBlocBasketteur{
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    /* cette propriété au dessus pour interdire
+     l'utilisateur de sélectionner du texte */
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
     position: absolute;
-    display: block;
-    background: #000;
-    opacity: 60%;
-    width: 280px;
-    height: 80px;
-    color: white;
-    font-family: Oswald;
-    line-height: 1px;
-    box-sizing: border-box;
-    bottom: 51.8%;
-    border-radius: 0px 0px 25px 25px;
-    padding: 15px;
-    line-height: 18px;
+    top: 0;
+  }
 
-}
 
-#displayBlocBasketteur:hover{
-    background: white;
-    opacity: 50%;
-}
-
-#displayBlocBasketteur>.titreColumn>a:hover{
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: var(--jaune);
+    padding: 2px 16px;
     color: var(--vert);
     font-weight: 700;
-}
-
-#imageBasketteur{
-    padding-bottom: 10px;
-    position: relative;
-    width: 280px;
-   
-}
-
-
-
-
-/* ***************************image_famille_lecture*************************************** */
-#displayBlocFamille{
-    position: absolute;
-    display: block;
-    background: #000;
-    opacity: 60%;
-    width: 280px;
-    height: 80px;
-    color: white;
-    font-family: Oswald;
-    line-height: 1px;
-    box-sizing: border-box;
-    bottom: 5%;
-    border-radius: 0px 0px 25px 25px;
-    font-size: 13px;
-    padding: 15px;
-    line-height: 18px;
-
-}
-
-#displayBlocFamille:hover{
-    background: white;
-    opacity: 50%;
-}
-
-#displayBlocFamille>.titreColumn>a:hover{
-    color: var(--vert);
-    font-weight: 700;
-}
- 
-#imageFamilleLecture{
-    position: relative;
-    width: 280px;
-}
-
-
-/* ****************************Caroussel**************************** */
-
- #precedent, #suivant{
-    curser: pointer;
-    opacity: 0;
-    position: absolute;
-    transition: opacity 2s ease;
-    font-size: 50px;
-    background-color: transparent;
-    
-   }
-#suivant{
-    right:0;
-}
-
-#precedent{
-left: 0;
-}
-
-#slider:hover #precedent{
-    opacity:1;
-}
-
-#slider:hover #suivant{
-    opacity:1;
-}
-
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
     /****************************second-section************************************/
     #secondSection{
         display: flex;
@@ -436,10 +323,13 @@ left: 0;
 
     .image {
         padding: 20px;
-    }
-    img {
         width: 230px;
         height: 220px;
+    }
+
+    .imgCol {
+        width: 180px;
+        height: 180px;
         
     }
 
