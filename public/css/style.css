@@ -355,7 +355,10 @@ footer{
     #navbar{
         display: none;
     }
-
+    
+    #popupPhoto{
+        display: none; 
+    }
 
     #popupNav{
         position: absolute;
