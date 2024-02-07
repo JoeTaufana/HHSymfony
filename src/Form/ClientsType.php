@@ -22,7 +22,6 @@ class ClientsType extends AbstractType
             ->add('prenom', TextType::class)
             ->add('nom', TextType::class)
             ->add('telephone', TextType::class)
-            ->add('photoProfil', TextType::class)
             ->add('optInSms', CheckboxType::class)
             ->add('optInMail', CheckboxType::class)
             ->add('dateNaissance', BirthdayType::class)

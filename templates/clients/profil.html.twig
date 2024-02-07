@@ -5,15 +5,10 @@
             {{ form_row(ClientUser.prenom) }}
             {{ form_row(ClientUser.nom) }}
             {{ form_row(ClientUser.telephone) }}
-            {{ form_row(ClientUser.optInSms) }}
-            {{ form_row(ClientUser.optInMail) }}
+            {{ form_row(ClientUser.optInSms, {label: 'Rappel sms  '}) }}
+            {{ form_row(ClientUser.optInMail, {label: 'Rappel mail  '}) }}
             {{ form_row(ClientUser.dateNaissance) }}
             {{ form_row(ClientUser.nombreEnfant) }}
-            {{ form_row(ClientUser.save) }}
-            
-
-            
-            
-            
+            {{ form_row(ClientUser.save) }}   
     {{ form_end(ClientUser) }}
 {% endblock %}
