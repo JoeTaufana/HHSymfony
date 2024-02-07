@@ -1,0 +1,57 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Choix3Défis!{% endblock %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="{{ asset('css/cssLynda.css') }}">
+
+	{# <link rel="stylesheet" href="{{ asset('css/creation.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/login.css') }}">
+   
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}"> #}
+
+
+{% endblock %}
+
+{% block body %}
+<body>
+          <section id="défiPresentation">
+            <div class="défiPresGauche" >
+                        <h1> Chassons l'ennui !</h1>
+            </div>
+            <div class="défiPresDroite">
+                        <p>De quelle humeur te sens-tu aujourd’hui? <br>
+                            Découvre vite ce que nos cartes magiques te réservent.<br>
+                            Clique sur une des cartes et à toi de jouer!</p>
+            </div>
+          </section>
+          <section id="choixDefis">
+                    <div class="choixContainer">
+                        <div class="gourmand">
+                            <div class="image">
+                                <img src="../img/cuisine.jpg" alt="Famille qui cuisine">
+                            </div>
+                            <div class="containerText">
+                                <a href="{{path('app_défiGourmand')}}"><h3>Défi gourmand</h3></a>
+                            </div>
+                        </div>
+                        <div class="fun">
+                            <div  class="image">
+                                <img src="../img/fun.jpg" alt="4 personnes qui sont heureuses avec une coupe">
+                            </div>
+                            <div class="containerText">
+                                <a href="{{path('app_défiFun')}}"><h3>Défi fun</h3></a>
+                            </div>
+                        </div>
+                        <div class="zen">
+                            <div  class="image">
+                                <img src="../img/Zen.jpg" alt="Illustration d'une personne faisant la position du lotus">
+                            </div>
+                            <div class="containerText">
+                                <a href= "{{path('app_défiZen')}}"><h3>Défi zen</h3></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+</body>
+{% endblock %}

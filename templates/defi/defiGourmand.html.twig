@@ -1,0 +1,73 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}defiGourmand{% endblock %}
+
+{%block stylesheet%}
+    <link rel="stylesheet" href="{{ asset('css/cssLynda.css') }}">
+
+	{# <link rel="stylesheet" href="{{ asset('css/creation.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/login.css') }}">
+   
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}"> #}
+
+
+{%endblock%}
+
+{% block body %}
+<body>  
+          <main id="defiGourmand1Main">
+                    
+
+          <section id="introGourmand">
+                    <div class="titreGauche">
+                              <h1>
+                                        Chassons l'ennui!
+                              </h1>
+                    </div>
+                    <div class="titreDroite">
+                              <h2>
+                                        Une petite faim? <br>
+                                        Lions l’utile à l’agréable une recette facile à faire en famille.
+                              </h2>
+          </section>
+       
+
+          <section id="GourmandVerso1">
+                    <h2> Crêpes </h2>
+                    <div id="gourmandVerso1_bloc">
+                              
+                              <div class="imageGourmand_blocGauche">
+                                      
+                                        <img src="../img/crêpes.jpg" alt="">
+                              </div>                             
+                              <div class="gourmandVerso1_blocDroit">
+                                        
+                                        <div class="fondTexte">
+                                                  <p>
+                                                  <b>Les ingrédients pour la pâte à crêpe :</b>
+                                                  - 250 g de farine<br>
+                                                  - 50 cl de lait<br>
+                                                  - 3 oeufs<br>
+                                                  - 1 pincée de sel<br>
+                                                  - un saladier, une cuillère en bois, une poêle et une louche<br>
+                                                                                                    
+
+                                                  <b>Les étapes pour faire la pâte à crêpe pour enfant ?</b></br>
+                                                  1. Verser la farine et le sel dans le saladier.<br>
+                                                  2. Casser les oeufs dans le saladier puis mélanger avec la cuillère en bois et ajouter le lait progressivement sans cesser de mélanger.
+                                                  3. Laisser reposer la pâte pendant 1 heure.<br>
+                                                  4. Faire chauffer la poêle puis verser une louche de pâte, bien répartir en bougeant la poêle.<br>
+                                                  5. Laisser cuire et retourner la crêpe.<br>
+                                                  Il ne reste plus qu'à déguster les crêpes avec toute la famille !
+                                                  </p>
+                                        </div>
+                                        
+                              </div>
+                                                 
+                    </div>
+                    <a href="unNouveauDefi.html" class="btn ocre"> Un nouveau Défi</a> 
+          </section>
+          </main>
+
+</body>
+{% endblock %}

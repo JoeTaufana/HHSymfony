@@ -1,0 +1,65 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}defiZen!{% endblock %}
+
+{%block stylesheet%}
+    <link rel="stylesheet" href="{{ asset('css/cssLynda.css') }}">
+
+	{# <link rel="stylesheet" href="{{ asset('css/creation.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/login.css') }}">
+   
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}"> #}
+
+
+{%endblock%}
+
+{% block body %}
+<body>  
+          <main id="defiYoga1Main">
+
+          <section id="introYoga">
+                    <div class="titreGauche">
+                              <h1>
+                                        Chassons l'ennui!
+                              </h1>
+                    </div>
+                    <div class="titreDroite">
+                              <h2>
+                                        Besoin de calme? 
+                                        Bonne pioche ! <br>
+                                        Les bienfaits du Yoga sont universels.
+                                        Le bien-être à portée de main...   
+                              </h2>
+          </section>
+       
+
+          <section id="YogaVerso1">
+                    <h2> Demi-Lotus </h2>
+                    <div id="yogaVerso1_bloc">
+                              
+                              <div class="imageLotus_blocGauche">
+                                        <img src="../img/lotus_position_femme.jpg" alt="">
+                              </div>                             
+                              <div class="yogaVerso1_blocDroit">
+                                        
+                                        <div class="fondTexte">
+                                                  <p>
+                                                  Assieds-toi par terre confortablement, et allonge tes jambes devant toi.<br>
+
+                                                  Plie ta jambe droite, et pose ton pied droit sur ta cuisse gauche. <br>
+                                                  Plie ta jambe gauche et dépose ton pied gauche sur ta cuisse droite. Pose tes mains sur tes genoux, tournées vers le ciel. Tu peux rejoindre ton pouce et ton index. Ferme les yeux, respire calmement sans forcer. </br> Demi-lotus: on n'a pas les deux pieds posés sur les cuisses, un pied est simplement posé sous la cuisse.<br>
+                                                  <br>        
+                                                  <b>Bienfaits :</b> aide à retrouver le calme, apprend à respirer.
+                                                  </p>
+                                        </div>
+                                        
+                              </div>
+                                                 
+                    </div>
+                    <a href="{{path('app_nouveauDefi')}}" class="btn jaune"> Un nouveau Défi</a> 
+                  
+
+          </section>
+          </main>
+</body>
+{% endblock %}
