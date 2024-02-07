@@ -7,9 +7,6 @@
 		{# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
 		
 		<link rel="stylesheet" href="{{ asset('css/style.css') }}">
-		
-		{#<link rel="stylesheet" href="{{ asset('css/creation.css') }}">#}
-		{# <link rel="stylesheet" href="{{ asset('css/creation.css') }}"> #}
 
 		{% block stylesheet %}
 
@@ -18,6 +15,7 @@
 		{# {% block javascripts %}
 		            #{{ encore_entry_script_tags('app') }}
 		        {% endblock %} #}
+
 	</head>
 	<header>
 		    {% block header %}
@@ -84,22 +82,22 @@
 			<div id="liens">
 				<ul>
 					<li>
-						<a href="{{ asset('js/popupNav.js') }}">Accueil</a>
+						<a href="{{ path('app_index') }}">Accueil</a>
 					</li>
 					<li>
-						<a href="#">A propos</a>
+						<a href="{{ path('app_aPropos') }}">A propos</a>
 					</li>
 					<li>
-						<a href="#">Conditions d'utilisation</a>
+						<a href="{{ path('app_conditionsUt') }}">Conditions d'utilisation</a>
 					</li>
 				</ul>
 				<div>
 					<img src="{{ asset('img/clou.svg') }}" alt="">
 				</div>
 				<ul>
-					<li><a href="#">Confidentialité</a></li>
-					<li><a href="#">Contactez-nous</a></li>
-					<li><a href="#">Mentions légales</a></li>
+					<li><a href="{{ path('app_confidentialite') }}">Confidentialité</a></li>
+					<li><a href="{{ path('app_contact') }}">Contactez-nous</a></li>
+					<li><a href=""{{ path('app_mentionsLegales') }}"">Mentions légales</a></li>
 				</ul>
 			</div>
 			<div id="reseaux">

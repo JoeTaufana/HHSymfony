@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mentions légales{% endblock %}
+
+{% block body %}
+
+    <h2>Mentions Légales</h2>
+
+    <section>
+        <h3>Hébergement</h3>
+        <p>Le site est hébergé localement, nous mettrons à jour les informations dès lors que l'application sera réellement accessible.</p>
+    </section>
+
+    <section>
+        <h3>Directrice de Publication</h3>
+        <p>La directrice de publication est l'équipe Happy Home. Vous pouvez nous contacter dans la section <a href="{{ path('app_contact') }}">Contactez Nous</a>.</p>
+    </section>
+
+    <section>
+        <h3>Images</h3>
+        <p>Toutes les images utilisées sur ce site sont libres de droit.</p>
+    </section>
+
+    <section id="contact">
+        <h3>Contactez Nous</h3>
+        <p>Pour toute question ou préoccupation, vous pouvez nous contacter à l'adresse e-mail suivante : <a href="mailto:{{ adresse e-mail de contact }}">[adresse e-mail de contact]</a>.</p>
+    </section>
+{% endblock %}
