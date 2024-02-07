@@ -1,0 +1,546 @@
+/* *****************************Fonts******************************************* */
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand-Light.eot');
+    src: url('../fonts/Quicksand-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Quicksand-Light.woff2') format('woff2'),
+        url('../fonts/Quicksand-Light.woff') format('woff'),
+        url('../fonts/Quicksand-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand-Light_1.eot');
+    src: url('../fonts/Quicksand-Light_1.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Quicksand-Light_1.woff2') format('woff2'),
+        url('../fonts/Quicksand-Light_1.woff') format('woff'),
+        url('../fonts/Quicksand-Light_1.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand-Light_2.eot');
+    src: url('../fonts/Quicksand-Light_2.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Quicksand-Light_2.woff2') format('woff2'),
+        url('../fonts/Quicksand-Light_2.woff') format('woff'),
+        url('../fonts/Quicksand-Light_2.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand-Light_3.eot');
+    src: url('../fonts/Quicksand-Light_3.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Quicksand-Light_3.woff2') format('woff2'),
+        url('../fonts/Quicksand-Light_3.woff') format('woff'),
+        url('../fonts/Quicksand-Light_3.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Regular.eot');
+    src: url('../fonts/Oswald-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Oswald-Regular.woff2') format('woff2'),
+        url('../fonts/Oswald-Regular.woff') format('woff'),
+        url('../fonts/Oswald-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Regular_1.eot');
+    src: url('../fonts/Oswald-Regular_1.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Oswald-Regular_1.woff2') format('woff2'),
+        url('../fonts/Oswald-Regular_1.woff') format('woff'),
+        url('../fonts/Oswald-Regular_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Regular_2.eot');
+    src: url('../fonts/Oswald-Regular_2.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Oswald-Regular_2.woff2') format('woff2'),
+        url('../fonts/Oswald-Regular_2.woff') format('woff'),
+        url('../fonts/Oswald-Regular_2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Regular_3.eot');
+    src: url('../fonts/Oswald-Regular_3.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Oswald-Regular_3.woff2') format('woff2'),
+        url('../fonts/Oswald-Regular_3.woff') format('woff'),
+        url('../fonts/Oswald-Regular_3.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/* ***************************Variables*************************************************/
+:root{
+    --vert: #385a64;
+    --jaune: #F2B705;
+    --ocre: #BF5F56;
+    --rose: #F2A29B;
+    --gris: #F2F2F2;
+
+}
+/* ***********************************Pages*************************************** */
+
+*{
+    margin : 0px;
+    padding: 0px;
+}
+
+html {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+body {
+    scroll-behavior: smooth;
+    background-color: var(--gris);
+    background: 
+    url(../img/Splash.svg) -10% 5%,
+    url(../img/Splash.svg) -14% 69%,
+    url(../img/Splash.svg) bottom -4% right -7%,
+    url(../img/EllipseVert.svg) 103% 22%,
+    url(../img/Ellipse_gras_ocre.svg) 105% 37%,
+    url(./img/Déco rose.svg) -4% 37%,
+
+    background-repeat: no-repeat;  
+}
+
+
+#introduction{
+    line-height: 6px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 50px;
+    padding-top: 50px;
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-direction: column;
+}
+
+#introduction>h1{
+    color: var(--vert);
+    font-size: 45px;
+    font-family: Oswald;
+    font-weight: bold;
+    padding: 20px;
+    margin: 20px;
+}
+
+#firstSection>#introduction>p{
+    color: var(--vert);
+    font-size: 20px;
+    font-family: Quicksand;
+    font-weight: bold;
+   /* text-shadow: 0px 5px 2px var(--vert); */
+}
+
+#bouton{
+    display: flex;
+    flex-direction: row;
+    justify-content:  center;
+    margin-left: 40%;
+    margin-bottom: 20px;
+}
+#bouton a{
+    text-decoration: none;
+    color: var(--vert);
+}
+
+button{
+    margin: 10px;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    color: var(--vert);
+    font-size: 16px;
+    font-family: Oswald;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+ #btnParent:hover a{
+    color: var(--ocre);
+   
+}
+
+#btnEnfant:hover a{
+    color: var(--ocre);
+   
+}
+/* *******************************Caroussel************************************ */
+/* *************************mettre les images dans le slider*********************************************** */
+#slider{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 1000px;
+    margin: 0px auto;
+    max-width: 1000px;
+    /* border: 1px solid black; */
+
+}
+
+#sousSliderRow{
+
+    width: 550px;
+    padding: 20px;
+    
+}
+
+
+#imgSousSliderRow{
+    width: 100%;
+   height: 100%;
+   border-radius: 25px;
+  
+   margin-left: 35px;
+   
+}
+
+
+#sousSliderColumn{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    padding-left: 50px;
+}
+
+/* ****************************la première image************************************* */
+
+.divDisplayBloc{
+    position: absolute;
+    display: block;
+    background: #000;
+    opacity: 60%;
+    width: 550px;
+    height: 80px;
+    border-radius: 0px 0px 25px 25px;
+    bottom: 21px;
+    color: white;
+    font-family: Oswald;
+    line-height: 1px;
+    padding: 20px;
+    margin-left: 35px;
+    box-sizing: border-box;  
+    position: absolute;
+    }
+ 
+    .divDisplayBloc:hover{
+        background: white;
+        opacity: 50%; 
+    }
+
+    .divDisplayBloc #titre a:hover{
+        color: var(--vert);
+        font-weight: 700;
+    }
+
+/* ****************************en commun pour toutes les images********************** */
+
+#titre a{
+    font-size: 20px;
+    color:var(--gris);
+    line-height: 10px;
+    text-decoration: none;
+    
+}
+
+.titreColumn a{
+    font-size: 20px;
+    color:var(--gris);
+    line-height: 10px;
+    text-decoration: none;
+    
+}
+
+#date {
+    font-size: 15px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+.dateColumn{
+    font-size: 15px;
+    /* margin-left: 20px;
+    margin-top: 20px; */
+}
+
+/* ***********************en commun pour les images en colonne************************************** */
+
+.imgSousSlider{
+    width: 100%;
+    border-radius: 25px;
+    
+}
+/* **********************image_basketteur********************************************** */
+
+
+#displayBlocBasketteur{
+    position: absolute;
+    display: block;
+    background: #000;
+    opacity: 60%;
+    width: 280px;
+    height: 80px;
+    color: white;
+    font-family: Oswald;
+    line-height: 1px;
+    box-sizing: border-box;
+    bottom: 51.8%;
+    border-radius: 0px 0px 25px 25px;
+    padding: 15px;
+    line-height: 18px;
+
+}
+
+#displayBlocBasketteur:hover{
+    background: white;
+    opacity: 50%;
+}
+
+#displayBlocBasketteur>.titreColumn>a:hover{
+    color: var(--vert);
+    font-weight: 700;
+}
+
+#imageBasketteur{
+    padding-bottom: 10px;
+    position: relative;
+    width: 280px;
+   
+}
+
+
+
+
+/* ***************************image_famille_lecture*************************************** */
+#displayBlocFamille{
+    position: absolute;
+    display: block;
+    background: #000;
+    opacity: 60%;
+    width: 280px;
+    height: 80px;
+    color: white;
+    font-family: Oswald;
+    line-height: 1px;
+    box-sizing: border-box;
+    bottom: 5%;
+    border-radius: 0px 0px 25px 25px;
+    font-size: 13px;
+    padding: 15px;
+    line-height: 18px;
+
+}
+
+#displayBlocFamille:hover{
+    background: white;
+    opacity: 50%;
+}
+
+#displayBlocFamille>.titreColumn>a:hover{
+    color: var(--vert);
+    font-weight: 700;
+}
+ 
+#imageFamilleLecture{
+    position: relative;
+    width: 280px;
+}
+
+
+/* ****************************Caroussel**************************** */
+
+ #precedent, #suivant{
+    curser: pointer;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 2s ease;
+    font-size: 50px;
+    background-color: transparent;
+    
+   }
+#suivant{
+    right:0;
+}
+
+#precedent{
+left: 0;
+}
+
+#slider:hover #precedent{
+    opacity:1;
+}
+
+#slider:hover #suivant{
+    opacity:1;
+}
+
+    /****************************second-section************************************/
+    #secondSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #secondSection>#paragrapheSecondSection>p{
+        color: var(--vert);
+        font-size: 20px;
+        font-family: Oswald;
+        font-weight: bold;
+        text-align: center;
+        padding: 40px;
+        margin: 20px;  
+    }
+
+    #paragrapheSecondSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        text-align: center; 
+        
+    }
+    
+    .divContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 25px;
+        width: 700px;
+        border-radius: 15px;
+        box-shadow: 8px 8px 4px var(--jaune);
+        background-color: white;
+    }
+
+    .image {
+        padding: 20px;
+    }
+    img {
+        width: 230px;
+        height: 220px;
+        
+    }
+
+    .articleIntroduction{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        margin: 0px auto;
+    }
+
+
+    /* Pour enlever le soulignement et rendre sa couleur initiale */
+    .divContainer .articleIntroduction h2 a{
+        color: var(--ocre);
+        text-decoration: none;
+    }
+
+    #secondSection .articleIntroduction p{
+        font-size: Quicksand;
+        font-family: 18px;
+        color: var(--vert);
+    }
+    
+/* *************************mediaquery********************************** */
+
+@media only screen and (max-width:768px){
+    body {
+        background: none;
+    }
+    #introduction{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        right: 10px;
+       
+    }
+    
+
+    #introduction>h1{
+        font-size: 35px;
+        line-height: 25px;
+    
+    }
+    
+    #firstSection>#introduction>p{
+        font-size: 20px;
+        line-height: 15px;
+    }
+    
+    #bouton{
+        margin-left: 10%;
+    } 
+
+    button{
+        padding: 5px 10px;
+        font-size: 13px;
+       
+    }
+    
+    #slider{
+        width: 100%;
+    
+    }
+    #imgSousSliderRow{
+        width: 300px;
+    }
+    #blocBasketteur, #blocFamille{
+        display: none;
+    }
+    .divDisplayBloc{
+        width: 300px;
+       margin-right: 20px;
+      
+    }
+
+    #titre {
+        font-size: 10px;
+        margin-right: 20px;
+    }
+    
+   #date{
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    
+    #secondSection .divContainer{
+        display: flex;
+        flex-direction: column; 
+        width: 100%;
+    }
+    } 
+
