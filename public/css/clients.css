@@ -1,3 +1,4 @@
+
 main{
     height: 100vh;
     background: url(../img/Splash.svg) 5% 10%,
@@ -9,10 +10,11 @@ main{
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
-    justify-content: center;   
+    justify-content: center;
+    
 }
 
-#inscription{
+#profil{
     width: 60%;
     height: 60%;
     border: 1px solid #BF5F56;
@@ -21,14 +23,14 @@ main{
     color: #385A64;
 }
 
-#inscription h1{
+#profil h1{
     text-align: center;
     padding-top: 3%;
     letter-spacing: 2px;
     color: #385A64;
 }
 
-#display_start{
+article{
     width: 100%;
     margin-top: 3%;
     color: #385A64;
@@ -37,7 +39,7 @@ main{
     flex-wrap: wrap;
 }
 
-/* article h3{
+article h3{
     letter-spacing: 1px;
 }
 
@@ -58,10 +60,10 @@ main{
     justify-content: space-between;
 }
 
-*/
+
 
 .btn{
     font-weight: bold;
 }
 
- 
+

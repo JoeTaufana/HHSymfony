@@ -22,14 +22,32 @@ class ClientsType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('prenom', TextType::class)
-            ->add('nom', TextType::class)
-            ->add('telephone', TextType::class)
-            ->add('optInSms', CheckboxType::class)
-            ->add('optInMail', CheckboxType::class)
-            ->add('dateNaissance', BirthdayType::class)
-            ->add('nombreEnfant', IntegerType::class)
-        ;
+            ->add('prenom', TextType::class, [
+                'label' => 'Prénom',
+            ])
+            ->add('nom', TextType::class, [
+                'label' => 'Nom',
+            ])
+            ->add('telephone', TextType::class, [
+                'label' => 'Téléphone',
+            ])
+            ->add('optInSms', CheckboxType::class, [
+                'label' => 'Rappel SMS  ',
+                'required' => false,
+            ])
+            ->add('optInMail', CheckboxType::class, [
+                'label' => 'Option Email  ',
+                'required' => false,
+            ])
+            ->add('dateNaissance', BirthdayType::class, [
+                'label' => 'Date de Naissance',
+                'widget' => 'single_text',
+            ])
+            ->add('nombreEnfant', IntegerType::class, [
+                'label' => 'Nombre d\'enfants',
+                'required' => false,
+            ]);
+            
     }
 
     public function configureOptions(OptionsResolver $resolver): void
