@@ -36,45 +36,17 @@ class ClientsController extends AbstractController
                     'Clients' => $form->createView(),
                 ]);
             }
-        } else {
-            // non logué il faut le rediriger vers la page login
-            return $this->redirectToRoute('login');
-        }
-
-        return $this->render('clients/index.html.twig', [
-            'Clients' => $form->createView(),
-        ]);
-    }
-
-    /**
-     * @Route("/profil", name="app_profil")
-     */
-    function profil(Request $request, EntityManagerInterface $entityManager): Response
-    {
-        if ($this->getUser()) {
-            $client = $entityManager->getRepository(Clients::class)->findOneBy(['user' => $this->getUser()]);
-            $form = $this->createForm(RegistrationFormClientsType::class, ['user' => $this->getUser(), 'client' => $client]);
-            $form->handleRequest($request);
-
-            if ($form->isSubmitted() && $form->isSubmitted()) {
-                // il faut lier le user et le client via la clé commune
-
-                // $client->setUser($this->getUser());
-                // $entityManager->persist($client);
-                // $entityManager->flush();
-                // return $this->render('index/index.html.twig', [
-                //     'Clients' => $form->createView(),
-                // ]);
-            }
-
-            return $this->render('clients/profil.html.twig', [
-                'ClientUser' => $form->createView(),
+            
+            return $this->render('clients/index.html.twig', [
+                'Clients' => $form->createView(),
             ]);
         } else {
             // non logué il faut le rediriger vers la page login
             return $this->redirectToRoute('login');
         }
 
+        
     }
 }
+
 

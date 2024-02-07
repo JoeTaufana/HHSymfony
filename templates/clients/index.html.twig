@@ -9,8 +9,10 @@
             {{ form_row(Clients.optInMail) }}
             {{ form_row(Clients.dateNaissance) }}
             {{ form_row(Clients.nombreEnfant) }}
-            {{ form_row(Clients.save) }}
-            
+
+            <div id="bouton">
+				<button type="submit" class="btn ocre">Valider</button>
+			</div>
             
     {{ form_end(Clients) }}
 {% endblock %}
