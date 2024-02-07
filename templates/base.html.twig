@@ -15,7 +15,7 @@
 		{# {% block javascripts %}
 		            #{{ encore_entry_script_tags('app') }}
 		        {% endblock %} #}
-				
+
 	</head>
 	<header>
 		    {% block header %}
@@ -85,7 +85,7 @@
 						<a href="{{ asset('js/popupNav.js') }}">Accueil</a>
 					</li>
 					<li>
-						<a href="#">A propos</a>
+						<a href="{{ path('aPropos') }}">A propos</a>
 					</li>
 					<li>
 						<a href="#">Conditions d'utilisation</a>
