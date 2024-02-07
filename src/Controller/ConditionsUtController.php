@@ -9,9 +9,10 @@ use Symfony\Component\Routing\Annotation\Route;
 class ConditionsUtController extends AbstractController
 {
     /**
-     * @Route("/Conditions", name="app_conditions")
+     * @Route("/conditionsUt", name="app_conditionsUt")
      */
-    public function conditions(): Response
+
+    public function Propos(): Response
     {
         return $this->render('footer/conditionsUt.html.twig');
     }
