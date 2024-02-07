@@ -1,35 +1,37 @@
 {% extends 'base.html.twig' %}
-{# {% block head %}
-	{{ parent() }}
-	<link rel="stylesheet" href="{{ asset('css/creation.css') }}">
-{% endblock %} #}
-{% block title %}Login
-{% endblock %}
+
+{% block title %}Log in!{% endblock %}
+
+{%block stylesheet%}
+    <link rel="stylesheet" href="{{ asset('css/login.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+{%endblock%}
 
 {% block body %}
-
-<form method="post">
+<form  method="post">
     {% if error %}
         <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
     {% endif %}
     {% if app.user %}
         <div class="mb-3">
-            You are logged in as {{ app.user.userIdentifier }}, <a href="{{ path('logout') }}">Logout</a>
+            You are logged in as {{ app.user.userIdentifier }}, <a href="{{ path('app_logout') }}">Logout</a>
         </div>
     {% endif %}
-
-		
-				<form class="formulaire" method="post">
-					<div id="display_start">
-						<label for="mail">Email :</label><br>
-						<input type="email" id="mail2" placeholder="Entrez un email*" name="email"><br>
-						<label for="password">Mot de passe :</label>
-						<input type="password" id="mdp2" minlength="4" maxlength="20" placeholder="Mot de passe*" name="password">
-					</div>
-					<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate')}}">
-					<input class="btn ocre valider" type="submit" value="Valider">
-				</form>
-			</section>
-		</main>
-
+    <div class="connexion">
+    <h2 class="h3 mb-3 font-weight-normal">Connexion</h2>
+    <div class="input-group">
+    <label for="inputEmail">Email:</label>
+    <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus>
+    <label for="inputPassword">Password:</label>
+    <input type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" required>
+    </div>
+    <input type="hidden" name="_csrf_token"
+           value="{{ csrf_token('authenticate') }}"
+    >
+    <button class="btn btn-lg btn-primary" type="submit">
+        Sign in
+    </button>
+    </div>
+</form>
 {% endblock %}
