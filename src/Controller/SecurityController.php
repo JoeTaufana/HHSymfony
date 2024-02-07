@@ -9,11 +9,13 @@ use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 
 class SecurityController extends AbstractController
 {
-    #[Route(path: '/login', name: 'login')]
+    /**
+     * @Route("/login", name="login")
+     */
     public function login(AuthenticationUtils $authenticationUtils): Response
     {
         if ($this->getUser()) {
-            return $this->redirectToRoute('site_home');
+            return $this->redirectToRoute('app_index');
         }
 
         // get the login error if there is one
@@ -24,7 +26,9 @@ class SecurityController extends AbstractController
         return $this->render('security/login.html.twig', ['last_username' => $lastUsername, 'error' => $error]);
     }
 
-    #[Route(path: '/logout', name: 'logout')]
+    /**
+     * @Route("/logout", name="logout")
+     */
     public function logout(): Response
     {
         throw new \LogicException('This method can be blank');

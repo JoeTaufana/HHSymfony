@@ -1,22 +1,33 @@
 {% extends 'base.html.twig' %}
-{% block title %}Register
+
+{% block stylesheet %}
+	<link rel="stylesheet" href="{{ asset('css/register.css') }}">
 {% endblock %}
 
-{% block stylesheets %}
-	<link rel="stylesheet" href="{{asset('css/login.css')}}">
-{% endblock %}
+{% block title %}Inscription{% endblock %}
+
 
 {% block body %}
-
-	<h2>Register</h2>
+<main>
+<section id="inscription">
+<h2>S'inscrire</h2>
 	{{ form_errors(registrationForm) }}
-	{{ form_start(registrationForm) }}
-	{{ form_row(registrationForm.email, {'label': 'Email:'}) }}
-	{{ form_row(registrationForm.plainPassword, {
-				label: 'Password:'
-			}) }}
-	{{ form_row(registrationForm.agreeTerms) }}
-	<button type="submit" class="btn">Register</button>
-	{{ form_end(registrationForm) }}
+		{{ form_start(registrationForm) }}
+			<div id="display_start">
+				{{ form_row(registrationForm.email, {'attr':{'class': 'input'}}) }}
+
+				{{ form_row(registrationForm.plainPassword,{label: 'Mot de passe', 'attr':{'class': 'input'}}) }}	
+
+				{{ form_row(registrationForm.agreeTerms,{label: 'Accepter les conditions  ', 'attr':{'id': 'caseCocher'}}) }}
+			</div>
+
+			<div id="bouton">
+				<button type="submit" class="btn ocre">Valider</button>
+			</div>
+		{{ form_end(registrationForm) }}
+
+
+			</section>
+		</main>
 
 {% endblock %}
