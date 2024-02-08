@@ -11,8 +11,11 @@ main{
 }
 
 #inscription{
-    width: 30%;
-    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 23rem;
+    height: 75%;
     margin: 75px auto;
     border: 1px solid #BF5F56;
     box-shadow: 4px 4px 10px grey;
@@ -27,10 +30,10 @@ main{
 
 #inscription h2{
     font-family: 'Oswald';
+    margin-bottom: 20px;
     font-size: 30px;
     font-weight: bold;
     text-align: center;
-    margin: 30px auto;
     letter-spacing: 1px;
     color: #385A64;
 }
@@ -40,38 +43,85 @@ main{
     margin-top: 3%;
     color: #385A64;
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center; 
+    padding: 20px;
+
 }
 
-/* article h3{
-    letter-spacing: 1px;
-}
-
-.label{
-    width: 100%;
-    height: 35px;
-    margin: 2% 0 5% 0;
-    padding: 0 2%;
-    background-color: #f2f2f2;
+.input {
+    margin: 15px;
+    width: 85%;
+    background-color: #F2F2F2;  
+    height: 45px;
     border: 1px solid #BF5F56;
     border-radius: 10px;
-    color: #385A64;
+    margin-bottom: 20px;
+
+    
+         
+    
 }
 
-#preferences{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+#bouton {
+    text-align: end;
+    margin-right: 45px;
+   
 }
 
-*/
-
-.btn{
-    font-weight: bold;
-}
-
-#bouton button{
+.btn {
     border: none;
 }
 
+/* *************************************Modal***************************************** */
+#myBtn {
+    border: none;
+    background-color: #F2F2F2;
+    width: 170px;
+    font-family: 'Oswald';
+    font-size: 16px;
+    color: #385A64;
+    font-weight: bold;
+
+
+
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>

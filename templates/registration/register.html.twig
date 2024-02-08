@@ -13,21 +13,19 @@
 <h2>S'inscrire</h2>
 	{{ form_errors(registrationForm) }}
 		{{ form_start(registrationForm) }}
-			<div id="display_start">
-				{{ form_row(registrationForm.email, {'attr':{'class': 'input'}}) }}
-
-
-			<h2>{{ form_errors(registrationForm) }}</h2>
-
-				{{ form_start(registrationForm) }}
-
 				<div id="display_start">
 					<h3>{{ form_row(registrationForm.email, {'attr':{'class': 'input'}}) }}</h3>
 
 					<h3>{{ form_row(registrationForm.plainPassword,{label: 'Mot de passe', 'attr':{'class': 'input'}}) }}</h3>	
+					
+					<!-- Trigger/Open The Modal -->
+					
 
-					<h3>{{ form_row(registrationForm.agreeTerms,{label: 'Accepter les conditions  ', 'attr':{'id': 'caseCocher'}}) }}</h3>
+					<button id="myBtn">{{ form_row(registrationForm.agreeTerms,{label: 'Accepter les conditions  ', 'attr':{'id': 'caseCocher'}}) }}</button>
 				</div>
+
+
+
 
 				<div id="bouton">
 					<button type="submit" class="btn ocre">Valider</button>
@@ -37,5 +35,17 @@
 
 		</section>
 	</main>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div>
+
 
 {% endblock %}
