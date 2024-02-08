@@ -9,7 +9,6 @@ main{
     background-repeat: no-repeat;
 
 }
-
 .connexion{
           display: flex;
           flex-direction: column;
@@ -21,45 +20,41 @@ main{
           border: 1px solid #BF5F56;
           box-shadow: 4px 4px 10px grey;
           border-radius: 10px;
-          padding: 10px 20px;
+          /* padding: 10px 20px; */
           color: #385A64;
       }
-       .connexion h2{
+.connexion h2{
           text-align: center;
           margin: 20px auto;
-            font-family: 'Oswald';
+          font-family: 'Oswald';
           font-size: 30px;
           font-weight: bold;
           color: #385A64;
       }
-      .connexion  label{
-          color: #000;
-          opacity: 85%;
+.connexion  label{
+         color: #385A64;
           font-size: 16px;
           font-family: Quicksand;
           font-weight: bold;
           margin-left: 10px;
       }
-      input {
+input {
           margin: 5px;
-          background-color: #F2F2F2;
-          
-         
+          background-color: #F2F2F2;  
+          padding-left: 20px;
       }
-      a{
-          margin: 5px;
-          color: #F2F2F2;
-      }
-      #inputEmail, #inputPassword{
+      
+#inputEmail, #inputPassword{
           width: 464px;
           max-width: 500px;
           height: 45px;
           border: 1px solid #BF5F56;
           border-radius: 10px;
           margin-bottom: 20px;
+          padding-left: 10px;
          
       }
-      .connexion button {
+.connexion button {
           background-color:#BF5F56;
           color: #F2F2F2;
           font-size: 16px;
@@ -69,7 +64,7 @@ main{
           border-radius: 10px;
           margin-top: 20px;
       }
-      @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
           .connexion {
               width: 250px;
           }

@@ -13,17 +13,24 @@ main{
 
 #inscription{
     width: 30%;
-    height: 80%;
+    height: 60%;
     margin: 75px auto;
     border: 1px solid #BF5F56;
     box-shadow: 4px 4px 10px grey;
     border-radius: 10px;
     padding: 10px 20px;
     color: #385A64;
+    font-size: 16px;
+    font-family: Quicksand;
+    font-weight: bold;
+   
     
 }
 
 #inscription h2{
+    font-family: 'Oswald';
+    font-size: 30px;
+    font-weight: bold;
     text-align: center;
     margin: 30px auto;
     letter-spacing: 1px;
