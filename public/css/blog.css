@@ -190,16 +190,11 @@ button{
     box-sizing: border-box;
   }
   
-  img {
-    vertical-align: middle;
-  }
-  
   /* Position the image container (needed to position the left and right arrows) */
   .container {
-    position: relative;
     max-width: 800px;
+    margin-left: 19%;
     position: relative;
-    margin: auto;
   }
   
   /* Hide the images by default */
@@ -226,8 +221,6 @@ button{
     font-size: 20px;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    /* cette propriété au dessus pour interdire
-     l'utilisateur de sélectionner du texte */
     -webkit-user-select: none;
   }
   
@@ -251,15 +244,13 @@ button{
     position: absolute;
     top: 0;
   }
-
-
+  
   /* Container for image text */
   .caption-container {
     text-align: center;
     background-color: var(--jaune);
     padding: 2px 16px;
     color: var(--vert);
-    font-weight: 700;
   }
   
   .row:after {

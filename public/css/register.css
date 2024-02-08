@@ -58,4 +58,7 @@ main{
     margin-bottom: 5%;
 }
 
+#bouton button{
+    border: none;
+}
 
