@@ -289,6 +289,10 @@ main{
     font-weight: bold;
     width: fit-content;
     display: flex;
+    margin: 10px;
+    font-size: 16px;
+    font-family: Quicksand;
+    font-weight: bold;
 
 }
 
@@ -479,10 +483,9 @@ main{
 
 main{
     background: url(../img/Splash.svg) 4% 60%,
-                url(../img/Ellipse_gras_ocre.svg) 80% 40%;
+                url(../img/Ellipse_gras_ocre.svg) 82% 20%;
     background-repeat: no-repeat;
 }
-
 
 /***************** unNouveauDéfi ********************/
 
@@ -503,8 +506,8 @@ main{
     width: 750px;
     background: #f2f2f2;
     position:fixed;
-    top: 30%;
-    left: 30%;
+    top: 17%;
+    left: 15%;
 }
 
 /* #popUpConnexion {
