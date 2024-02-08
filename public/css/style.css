@@ -247,34 +247,9 @@ header>nav ul li a:hover{
 
 }
 
-#popupNav{
-    width: 200px;
-    display: none;
-}
-
-#popupPhoto{
-    position: absolute;
-    display: none; /* Masquage de la barre de liens */
-    background-color: #f2a29b;
-    width: 200px;
-    height: 100vh;
-    top: 0;
-    right: 0px;
-    padding-top: 100px;
-    border-bottom-left-radius: 25px;
-    z-index: 1;
-}
-
-#popupPhoto ul{
-    display: flex;
-    flex-direction: column; /* Affichage des éléments de la liste en colonne pour le menu */
-    align-items: center; /* Alignement central des éléments de la liste */
-}
-
-#popupPhoto ul li{
-    margin: 25px 0; /* Marges top et bottom pour les éléments de la liste */
-}
-.menuBurger{
+/* #popupNav{
+    width: 100%;
+    max-width: 240px;
     display: none;
     width: 35px;
     position: absolute;
@@ -282,10 +257,10 @@ header>nav ul li a:hover{
     right: 85px;
 }
 
-/* Style pour le bouton du menu */
-.menuBurger{
-    cursor: pointer; /* Changement du curseur au survol du bouton */
-}
+#popupNav h2{
+    text-align: center;
+    margin: 20px auto;
+} */
 
 /****** fin header******/
 

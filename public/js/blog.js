@@ -1,28 +1,30 @@
-// const tableau = ["images/image1.jpg", "images/image2.jpg", "images/image3.png"];
-// precedent = document.getElementById("precedent");
-// suivant = document.getElementById("suivant");
+let slideIndex = 1;
+showSlides(slideIndex);
 
-// let indice = 0;
-// // au clique on passe à l'image suivante
-// suivant.addEventListener("click", fonction2);
-// function fonction2() {
-//   indice = indice + 1;
-//   if (indice > tableau.length - 1) {
-//     indice = 0;
-//   }
-//   document.getElementById("slide").src = tableau[indice];
-// }
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-// // au clique on passe à l'image précédente
-// precedent.addEventListener("click", fonction1);
-// function fonction1() {
-//   indice = indice - 1;
-//   if (indice < 0) {
-//     indice = tableau.length - 1;
-//   }
-//   document.getElementById("slide").src = tableau[indice];
-// }
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-// // La fonction setInterval pour defiler
-// setInterval("fonction2()", 1500); // 1500 c'est en ms
-// // ou on peut remplacer la fonction2 par fonction1
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}

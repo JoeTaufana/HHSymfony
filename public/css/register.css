@@ -7,24 +7,31 @@ main{
                 url(../img/Ellipse_gras_jaune.svg) 0% 55%,
                 url(../img/Ellipse_gras_ocre.svg) 20% 85%;
     background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;   
+
 }
 
 #inscription{
-    width: 60%;
+    width: 30%;
     height: 60%;
+    margin: 75px auto;
     border: 1px solid #BF5F56;
     box-shadow: 4px 4px 10px grey;
     border-radius: 10px;
     color: #385A64;
+    font-size: 16px;
+    font-family: Quicksand;
+    font-weight: bold;
+   
+    
 }
 
-#inscription h1{
+#inscription h2{
+    font-family: 'Oswald';
+    font-size: 30px;
+    font-weight: bold;
     text-align: center;
-    padding-top: 3%;
-    letter-spacing: 2px;
+    margin: 30px auto;
+    letter-spacing: 1px;
     color: #385A64;
 }
 
@@ -64,4 +71,7 @@ main{
     font-weight: bold;
 }
 
- 
+#bouton button{
+    border: none;
+}
+

@@ -1,0 +1,53 @@
+[33md39607a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32manwar[m[33m)[m HEAD@{0}: reset: moving to HEAD~1
+[33m6bd2b09[m HEAD@{1}: reset: moving to HEAD~1
+[33m886baa1[m HEAD@{2}: reset: moving to HEAD~1
+[33m9212543[m HEAD@{3}: reset: moving to HEAD~1
+[33m77f74f8[m HEAD@{4}: reset: moving to HEAD~1
+[33m63e699a[m HEAD@{5}: reset: moving to HEAD~1
+[33m14ccedb[m HEAD@{6}: reset: moving to HEAD
+[33m14ccedb[m HEAD@{7}: checkout: moving from main to anwar
+[33m59cfa6b[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m HEAD@{8}: pull origin main: Fast-forward
+[33m74d6065[m[33m ([m[1;31morigin/Lynda[m[33m)[m HEAD@{9}: checkout: moving from anwar to main
+[33m14ccedb[m HEAD@{10}: commit (merge): résolution des conflits
+[33m63e699a[m HEAD@{11}: checkout: moving from main to anwar
+[33m74d6065[m[33m ([m[1;31morigin/Lynda[m[33m)[m HEAD@{12}: pull: Fast-forward
+[33md889f66[m HEAD@{13}: checkout: moving from anwar to main
+[33m63e699a[m HEAD@{14}: commit: caroussel
+[33m77f74f8[m HEAD@{15}: commit: css
+[33m9212543[m HEAD@{16}: commit: css
+[33m886baa1[m HEAD@{17}: commit: blog.js
+[33m6bd2b09[m HEAD@{18}: commit: changement du carroussel
+[33md39607a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32manwar[m[33m)[m HEAD@{19}: commit: creation predf.css et son index
+[33m106ee14[m HEAD@{20}: commit: liaison des deux pages blog et article
+[33mc167102[m HEAD@{21}: commit: lier les pages blog et home
+[33mf81cce8[m HEAD@{22}: commit: création de la page blog
+[33md889f66[m HEAD@{23}: checkout: moving from main to anwar
+[33md889f66[m HEAD@{24}: checkout: moving from blog to main
+[33mefc82bd[m[33m ([m[1;32mblog[m[33m)[m HEAD@{25}: commit: récupération du header et du footer
+[33m2f8080d[m HEAD@{26}: commit: ajout imgBlog
+[33m02da0fa[m HEAD@{27}: commit: adaptation de blog.css
+[33m8704535[m HEAD@{28}: commit: blog.css
+[33md67c365[m HEAD@{29}: commit: blog.css
+[33m4c0223d[m HEAD@{30}: commit: création BlogController
+[33mb51c7ac[m HEAD@{31}: commit: homogénéité des deux fichiers login.css et register.css
+[33md889f66[m HEAD@{32}: checkout: moving from main to blog
+[33md889f66[m HEAD@{33}: commit: suppression du fichier inscription.css
+[33m8db828c[m HEAD@{34}: checkout: moving from anwar to main
+[33m818b78c[m[33m ([m[1;31morigin/anwar[m[33m)[m HEAD@{35}: checkout: moving from main to anwar
+[33m8db828c[m HEAD@{36}: checkout: moving from anwar to main
+[33m818b78c[m[33m ([m[1;31morigin/anwar[m[33m)[m HEAD@{37}: checkout: moving from main to anwar
+[33m8db828c[m HEAD@{38}: checkout: moving from anwar to main
+[33m818b78c[m[33m ([m[1;31morigin/anwar[m[33m)[m HEAD@{39}: checkout: moving from main to anwar
+[33m8db828c[m HEAD@{40}: checkout: moving from anwar to main
+[33m818b78c[m[33m ([m[1;31morigin/anwar[m[33m)[m HEAD@{41}: checkout: moving from main to anwar
+[33m8db828c[m HEAD@{42}: checkout: moving from anwar to main
+[33m818b78c[m[33m ([m[1;31morigin/anwar[m[33m)[m HEAD@{43}: checkout: moving from anwar to anwar
+[33m818b78c[m[33m ([m[1;31morigin/anwar[m[33m)[m HEAD@{44}: checkout: moving from main to anwar
+[33m8db828c[m HEAD@{45}: checkout: moving from anwar to main
+[33m818b78c[m[33m ([m[1;31morigin/anwar[m[33m)[m HEAD@{46}: checkout: moving from main to anwar
+[33m8db828c[m HEAD@{47}: checkout: moving from anwar to main
+[33m818b78c[m[33m ([m[1;31morigin/anwar[m[33m)[m HEAD@{48}: checkout: moving from main to anwar
+[33m8db828c[m HEAD@{49}: checkout: moving from anwar to main
+[33m818b78c[m[33m ([m[1;31morigin/anwar[m[33m)[m HEAD@{50}: checkout: moving from main to anwar
+[33m8db828c[m HEAD@{51}: commit: oo
+[33mc607464[m HEAD@{52}: clone: from https://github.com/JoeTaufana/HHSymfony.git

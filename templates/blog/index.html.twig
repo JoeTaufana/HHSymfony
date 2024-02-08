@@ -1,0 +1,187 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello BlogController!
+{% endblock %}
+
+{% block stylesheet %}
+	<link rel="stylesheet" href="{{ asset('css/blog.css') }}">
+{% endblock %}
+
+
+{% block body %}
+	<main>
+		<section id="firstSection">
+			<div id="introduction">
+				<h1>
+					Coin des parents
+				</h1>
+				<p>
+					Le blog utile qui partage des conseils,
+																				                    des astuces et des idées sur la vie en famille.
+				</p>
+			</div>
+
+			<div id="bouton">
+				<button id="btnParent">
+					<a href="#">Conseils pour parents</a>
+				</button>
+				<button id="btnEnfant">
+					<a href="#">Conseils pour enfants</a>
+				</button>
+			</div>
+			<!-- Container for the image gallery -->
+			<div
+				class="container">
+
+				<!-- Full-width images with number text -->
+				<div class="mySlides">
+					<div class="numbertext">1 / 6</div>
+					<img src="{{asset('imgBlog/basket.jpg')}}" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">2 / 6</div>
+					<img src="{{asset('imgBlog/calin.jpg')}}" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">3 / 6</div>
+					<img src="{{asset('imgBlog/maman_calin.jpg')}}" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">4 / 6</div>
+					<img src="{{asset('imgBlog/sport.jpg')}}" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">5 / 6</div>
+					<img src="{{asset('imgBlog/calin.jpg')}}" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">6 / 6</div>
+					<img src="{{asset('imgBlog/maman_calin.jpg')}}" style="width:100%">
+				</div>
+
+				<!-- Next and previous buttons -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<!-- Image text -->
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+
+				<!-- Thumbnail images -->
+				<div class="row">
+					<div class="column">
+						<img class="demo cursor" src="{{asset('imgBlog/basket.jpg')}}" style="width:100%" onclick="currentSlide(1)" alt="Libérez le potentiel de votre enfant">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="{{asset('imgBlog/calin.jpg')}}" style="width:100%" onclick="currentSlide(2)" alt="Quels sports pratiquer avec les enfants?">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="{{asset('imgBlog/maman_calin.jpg')}}" style="width:100%" onclick="currentSlide(3)" alt="Passer du temps de qualité avec les enfants">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="{{asset('imgBlog/sport.jpg')}}" style="width:100%" onclick="currentSlide(4)" alt="Libérez le potentiel de votre enfant">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="{{asset('imgBlog/calin.jpg')}}" style="width:100%" onclick="currentSlide(5)" alt="Qu’est ce qu’il fait rire aux enfants?">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="{{asset('imgBlog/maman_calin.jpg')}}" style="width:100%" onclick="currentSlide(6)" alt="14 raisons pour lire des histoires aux enfants">
+					</div>
+				</div>
+			</div>
+			<section id="secondSection">
+				<div id="paragrapheSecondSection">
+					<p>Parce que chaque jour est une nouvelle page à écrire ensemble,
+																		découvrons les clés d'une vie de famille épanouissante et complice.
+					</p>
+				</div>
+
+				<div class="divContainer">
+					<div class="articleIntroduction">
+						<h2>
+							<a href="{{ path('app_article') }}">
+								Libérez le potentiel de votre enfant
+							</a>
+						</h2>
+						<p>
+							Dans chaque enfant, réside un monde de potentiel, une graine
+																					prête à germer pour devenir quelque chose d'extraordinaire.
+																					En tant que parents, éducateurs, ou mentors, nous sommes les
+																					jardiniers de ces promesses, responsables de nourrir, de cultiver,
+																					et d'éclairer le chemin vers l'épanouissement.
+						</p>
+					</div>
+					<div class="image">
+						<img class="imgCol" src="{{asset('imgBlog/famille_histoire.jpg')}}" alt="Maman fait un câlin à sa fille dans la nature">
+					</div>
+				</div>
+
+				<div class="divContainer">
+					<div class="articleIntroduction">
+						<h2>
+							<a href="#">
+								Quels sports pratiquer avec les enfants?
+							</a>
+						</h2>
+						<p>
+							Dans chaque enfant, réside un monde de potentiel, une graine
+																					prête à germer pour devenir quelque chose d'extraordinaire.
+																					En tant que parents, éducateurs, ou mentors, nous sommes les
+																					jardiniers de ces promesses, responsables de nourrir, de cultiver,
+																					et d'éclairer le chemin vers l'épanouissement.
+						</p>
+					</div>
+					<div class="image">
+						<img class="imgCol" src="{{asset('imgBlog/sport.jpg')}}" alt="Maman fait du sport avec son fils à la maison">
+					</div>
+
+				</div>
+
+
+				<div class="divContainer">
+					<div class="image"><img class="imgCol" src="{{asset('imgBlog/plan.jpg')}}" alt="Père barbu s'amuse avec son fils"></div>
+					<div class="articleIntroduction">
+						<h2>
+							<a href="#">
+								Passer du temps de qualité avec les enfants
+							</a>
+						</h2>
+						<p>Dans chaque enfant, réside un monde de potentiel, une graine
+																					prête à germer pour devenir quelque chose d'extraordinaire.
+																					En tant que parents, éducateurs, ou mentors, nous sommes les
+																					jardiniers de ces promesses, responsables de nourrir, de cultiver,
+																					et d'éclairer le chemin vers l'épanouissement.
+						</p>
+					</div>
+				</div>
+
+				<div class="divContainer">
+					<div class="articleIntroduction">
+						<h2>
+							<a href="#">
+								Qu’est ce qu’il fait rire aux enfants?
+							</a>
+						</h2>
+						<p>Dans chaque enfant, réside un monde de potentiel, une graine
+																					prête à germer pour devenir quelque chose d'extraordinaire.
+																					En tant que parents, éducateurs, ou mentors, nous sommes les
+																					jardiniers de ces promesses, responsables de nourrir, de cultiver,
+																					et d'éclairer le chemin vers l'épanouissement.
+						</p>
+					</div>
+					<div class="image"><img class="imgCol" src="{{asset('imgBlog/vol.jpg')}}" alt="Père allongé tenant son fils"></div>
+
+				</div>
+
+
+			</section>
+
+		</main>
+		<script src="{{ asset('js/blog.js') }}"></script>
+	{% endblock %}
