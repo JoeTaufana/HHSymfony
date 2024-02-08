@@ -35,19 +35,23 @@ const renderCalendar = () => {
     for (let i = lastDayofMonth; i < 6; i++) {
         liTag += `<li class="inactive">${i - lastDayofMonth + 1}</li>`;
     }
-    
+
     // Met à jour le mois et l'année affichés
     currentDate.innerText = `${months[currMonth]} ${currYear}`;
+    
     // Met à jour le contenu HTML de l'élément avec la classe "days" avec les jours du mois
     daysTag.innerHTML = liTag;
 };
+
 // Appelle la fonction pour rendre le calendrier au chargement de la page
 renderCalendar();
+
 // Ajoute des écouteurs d'événements aux icônes de navigation précédente et suivante
 prevNextIcon.forEach(icon => {
     icon.addEventListener("click", () => {
         // Modifie le mois en fonction de l'icône cliquée (précédent ou suivant)
         currMonth = icon.id === "prev" ? currMonth - 1 : currMonth + 1;
+
         // Si le mois est en dehors de la plage [0, 11], ajuste l'année et le mois en conséquence
         if (currMonth < 0 || currMonth > 11) {
             date = new Date(currYear, currMonth);
@@ -56,6 +60,7 @@ prevNextIcon.forEach(icon => {
         } else {
             date = new Date();
         }
+
         // Appelle la fonction pour rendre le calendrier avec le mois mis à jour
         renderCalendar();
     });

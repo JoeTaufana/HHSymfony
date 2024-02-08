@@ -43,27 +43,10 @@ class ClientsController extends AbstractController
         } else {
             // non logué il faut le rediriger vers la page login
             return $this->redirectToRoute('login');
-        }   
+        }
+
+        
     }
-    // public function editerClient(Request $request, Clients $client): Response
-    // {
-    //     $formulaire = $this->createForm(ClientsType::class, $client);
-
-    //     $formulaire->handleRequest($request);
-
-    //     if ($formulaire->isSubmitted() && $formulaire->isValid()) {
-    //         // Mettez à jour l'entité Client avec les données du formulaire
-    //         $this->getDoctrine()->getManager()->flush();
-
-    //         $this->addFlash('success', 'Les informations du client ont été mises à jour avec succès.');
-
-    //         return $this->redirectToRoute('votre_route_pour_afficher_les_clients');
-    //     }
-
-    //     return $this->render('client/editer.html.twig', [
-    //         'formulaire' => $formulaire->createView(),
-    //     ]);
-    // }
 }
 
 

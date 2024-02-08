@@ -7,50 +7,26 @@
 
 {% block body %}
 
-
 <main>
 <section id="inscription">
-<h1>S'inscrire</h1>
+<h2>S'inscrire</h2>
 	{{ form_errors(registrationForm) }}
 		{{ form_start(registrationForm) }}
-				<div id="display_start">
-					<h3>{{ form_row(registrationForm.email, {'attr':{'class': 'input'}}) }}</h3>
+			<div id="display_start">
+				{{ form_row(registrationForm.email, {'attr':{'class': 'input'}}) }}
 
-					<h3>{{ form_row(registrationForm.plainPassword,{label: 'Mot de passe', 'attr':{'class': 'input'}}) }}</h3>	
-					<div id="myModal" class="modal">
-				</div>
-				<button id="myBtn">{{ form_row(registrationForm.agreeTerms,{label: 'Accepter les conditions  ', 'attr':{'id': 'caseCocher'}}) }}</button>
-					<!-- Modal content -->
-					<div class="modal-content">
-						<span class="close">&times;</span>					
-						<p>Bienvenue sur HappyHome ! En utilisant notre site, vous acceptez les conditions d'utilisation suivantes :</p>
-                    <h2 >1. Acceptation des conditions</h2>
-                    <p>En accédant à ce site, nous supposons que vous acceptez ces conditions d'utilisation dans leur intégralité. Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser notre site.</p>
-                    <h2 >2. Utilisation du site</h2>
-                    <p>Vous êtes autorisé à utiliser notre site pour vos besoins personnels et non commerciaux. Vous ne devez pas utiliser notre site d'une manière qui pourrait causer des dommages au site ou perturber l'accès d'autres utilisateurs.</p>
-                    <h2 >3. Contenu</h2>
-                    <p>Le contenu de ce site est fourni à titre informatif uniquement. Nous nous réservons le droit de modifier ou de supprimer du contenu sans préavis.</p>
-                    <h2 >4. Vie privée</h2>
-                    <p>Veuillez consulter notre politique de confidentialité pour comprendre comment nous collectons, utilisons et protégeons vos données personnelles.</p>
-                    <h2 >5. Liens vers des tiers</h2>
-                    <p>Notre site peut contenir des liens vers des sites web de tiers. Ces liens sont fournis pour votre commodité, mais nous n'avons aucun contrôle sur le contenu de ces sites tiers. Nous n'endossons pas le contenu de ces sites et ne sommes pas responsables de toute perte ou dommage résultant de leur utilisation.</p>
-                    <h2 >6. Modifications des conditions</h2>
-                    <p>Nous nous réservons le droit de modifier ces conditions d'utilisation à tout moment. Les modifications prendront effet dès leur publication sur le site. En continuant à utiliser le site après de telles modifications, vous acceptez les conditions mises à jour.</p>
-                    <h2 >7. Contact</h2>
-                    <p>Si vous avez des questions concernant ces conditions d'utilisation, veuillez nous contacter à l'adresse suivante : <a href="mailto:info@happyhome.com">info@happyhome.com</a>.</p>
-          
-					</div>
+				{{ form_row(registrationForm.plainPassword,{label: 'Mot de passe', 'attr':{'class': 'input'}}) }}	
 
-					</div>
+				{{ form_row(registrationForm.agreeTerms,{label: 'Accepter les conditions  ', 'attr':{'id': 'caseCocher'}}) }}
+			</div>
 
-				<div id="bouton">
-					<button type="submit" class="btn ocre">Valider</button>
-				</div>
-				{{ form_end(registrationForm) }}
+			<div id="bouton">
+				<button type="submit" class="btn ocre">Valider</button>
+			</div>
+		{{ form_end(registrationForm) }}
 
 
-		</section>
-	</main>
+			</section>
+		</main>
 
-<script src="{{ asset('js/register.js') }}"></script>
 {% endblock %}

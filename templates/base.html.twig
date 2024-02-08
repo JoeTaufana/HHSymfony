@@ -1,119 +1,103 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta
-		charset="UTF-8">
-
-		{# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
-
-		<link rel="stylesheet" href="{{ asset('css/style.css') }}"> {% block stylesheet %}{% endblock %}
+		<meta charset="UTF-8">
+	{% block stylesheets %}
+				<link rel="stylesheet" href="{{asset('css/style.css')}}">
+			{% endblock %}
 
 		{# {% block javascripts %}
 				            #{{ encore_entry_script_tags('app') }}
 				        {% endblock %} #}
 
-		</head>
-		<header>
-			{% block header %}
-				<a href="{{ path('app_index') }}">
-					<div id="logo">
-						<img src="{{asset('logo/LOGO.svg')}}" alt="logo">
-					</div>
-				</a>
+	</head>
+	<header>
+		    {% block header %}
+        <a href="{{ path('app_index') }}">
+            <div id="logo">
+                <img src="{{asset('logo/LOGO.svg')}}" alt="logo">
+            </div>
+        </a>
 
+		
+        <nav id="navbar">
+            <ul>
+                <li><a class="fd-bleu" href="#">
+                        <h2>agenda</h2>
+                    </a></li>
+                <li><a class="fd-jaune" href="{{ path('app_predf') }}">
+                        <h2>défis</h2>
+                    </a></li>
+                <li><a class="fd-ocre" href="{{ path('app_blog') }}">
+                        <h2>blog</h2>
+                    </a></li>
+                <li>
+                    <div id="photo_profil">
+                        <img id="personne" src="{{asset('img/la-personne.png')}}" alt="image d'un utilisateur">
+                    </div>
+                </li>
+            </ul>
+        </nav>
 
-				<nav id="navbar">
-					<ul>
-						<li>
-							<a class="fd-bleu" href="{{path('app_agenda')}}">
-								<h2>agenda</h2>
-							</a>
-						</li>
-						<li>
-							<a class="fd-jaune" href="{{ path('app_predf') }}">
-								<h2>défis</h2>
-							</a>
-						</li>
-						<li>
-							<a class="fd-ocre" href="{{ path('app_blog') }}">
-								<h2>blog</h2>
-							</a>
-						</li>
-						<li>
-							<div id="photo_profil">
-								<img src="{{asset('img/la-personne.png')}}" alt="image d'un utilisateur">
-							</div>
-						</li>
-					</ul>
-				</nav>
+		<div id="popupPhoto">
+			<ul>				
+			    <li><a href="{{ path('login') }}">Connexion</a></li>
+                <li><a href="#">Ma tribu</a></li>
+				<li><a href="#">Mon profil</a></li>
+                <li><a href="{{ path('logout') }}" class="deconnexion">Déconnexion</a></li>
+            </ul>
+        </div>
 
-				<div id="popupPhoto">
-					<ul>
-						<li><ahref="{{ path('login') }}">Connexion</a></li>
-						<li><a href="#">Ma tribu</a></li>
-						<li><a href="#">Mon profil</a></li>
-						<li><ahref="{{ path('logout') }}" class="deconnexion">Déconnexion</a></li>
-					</ul>
-				</div>
+        <div id="popupNav">
+            <ul>
+				<li><a href="{{ path('login') }}">Connexion</a></li>
+                <li><a href="#">Agenda</a></li>
+                <li><a href="#">Défis</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Ma tribu</a></li>
+				<li><a href="#">Mon profil</a></li>
+                <li><a href="{{ path('logout') }}" class="deconnexion">Déconnexion</a></li>
+            </ul>
+        </div>
+        <img class="menuBurger" src="{{asset('img/burger-menu.svg')}}" alt="menu hamburger">
+		{% endblock %}
+	</header>
+	<body>
+		{% block body %}{% endblock %}
+		<script src="{{ asset('js/popupNav.js') }}"></script>
+	</body>
 
-				<div id="popupNav">
-					<ul>
-						<li><ahref="{{ path('login') }}">Connexion</a></li>
-						<li><ahref="{{path('app_agenda')}}">Agenda</a></li>
-						<li><a href="#">Défis</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Ma tribu</a></li>
-						<li><a href="#">Mon profil</a></li>
-						<li><ahref="{{ path('logout') }}" class="deconnexion">Déconnexion</a></li>
-					</ul>
-				</div>
-				<img class="menuBurger" src="{{asset('img/burger-menu.svg')}}" alt="menu hamburger">
-			{% endblock %}
-		</header>
-		<body>
-			{% block body %}{% endblock %}
-			<script src="{{ asset('js/popupNav.js') }}"></script>
-		</body>
-
-
-		{% block footer %}
-			<footer>
-				<div id="logo_white">
-					<img src="{{ asset('logo/LOGO_white.svg') }}" alt=" logo blanc">
-				</div>
-				<div id="liens">
-					<ul>
-						<li>
-							<a href="{{ path('app_index') }}">Accueil</a>
-						</li>
-						<li>
-							<a href="{{ path('app_aPropos') }}">A propos</a>
-						</li>
-						<li>
-							<a href="{{ path('app_conditionsUt') }}">Conditions d'utilisation</a>
-						</li>
-					</ul>
-					<div>
-						<img src="{{ asset('img/clou.svg') }}" alt="">
-					</div>
-					<ul>
-						<li><ahref="{{ path('app_confidentialite') }}">Confidentialité</a></li>
-						<li><ahref="{{ path('app_contact') }}">Contactez-nous</a></li>
-						<li><ahref="{{ path('app_mentionsLegales') }}">Mentions légales</a></li>
-					</ul>
-				</div>
-				<div id="reseaux">
-					<div>
-						<a href="#"><img src="{{ asset('icones/instagram.svg') }}" alt="Nous suivre sur instagram"></a>
-					</div>
-					<div>
-						<a href="#"><img src="{{ asset('icones/facebook.svg') }}" alt="Nous suivre sur facebook"></a>
-					</div>
-					<div>
-						<a href="#"><img src="{{ asset('icones/pinterest.svg') }}" alt="Nous suivre sur pinterest"></a>
-					</div>
-				</div>
-			</div>
-		</html>
-	</footer>
-{% endblock footer %}</html>
+    
+        {% block footer %}
+        <footer>   
+        <div id="logo_white">
+            <img src="{{ asset('logo/LOGO_white.svg') }}" alt=" logo blanc">
+        </div>
+        <div id="liens">
+            <ul>
+                <li><a class="footerA" href="#">Accueil</a></li>
+                <li><a class="footerA" href="#">A propos</a></li>
+                <li><a class="footerA" href="#">Conditions d'utilisation</a></li>
+            </ul>
+            <div>
+                <img src="{{ asset('img/clou.svg') }}" alt="">
+            </div>
+            <ul>
+                <li><a class="footerA" href="#">Confidentialité</a></li>
+                <li><a class="footerA" href="#">Contactez-nous</a></li>
+                <li><a href="#">Mentions légales</a></li>
+            </ul>
+        </div>
+        <div id="reseaux">
+            <div><a href="#"><img src="{{ asset('icones/instagram.svg') }}"
+                        alt="Nous suivre sur instagram"></a></div>
+            <div><a href="#"><img src="{{ asset('icones/facebook.svg') }}"
+                        alt="Nous suivre sur facebook"></a></div>
+            <div><a href="#"><img src="{{ asset('icones/pinterest.svg') }}"
+                        alt="Nous suivre sur pinterest"></a></div>
+        </div>
+        </div>
+         
+    </footer>
+    {% endblock footer %}
+</html>

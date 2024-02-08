@@ -1,35 +1,18 @@
 {% extends 'base.html.twig' %}
 
-{% block stylesheet %}
-	<link rel="stylesheet" href="{{ asset('css/clients.css') }}">
-{% endblock %}
-
-{% block title %}Inscription{% endblock %}
-
 {% block body %}
-<main>
-    <section id="profil">
-        <h1>Mon profil</h1>
-        {{ form_start(Clients) }}
-        <article>
-            <div id='profilClient'>        
-                <h3>{{ form_row(Clients.nom, {'attr':{'class': 'input','class': 'label'}}) }}</h3>
-                <h3>{{ form_row(Clients.prenom, {'attr':{'class': 'input','class': 'label'}}) }}</h3>
-                <h3>{{ form_row(Clients.dateNaissance, {'attr':{'class': 'label'}}) }}</h3>
-                <h3>{{ form_row(Clients.nombreEnfant, {'attr':{'class': 'label'}}) }}</h3>
-            </div>  
-            <div id='preferences'>  
-                <h3>{{ form_row(Clients.telephone, {'attr':{'class': 'input','class': 'label'}}) }}</h3>
-                <h3>{{ form_row(Clients.optInSms, {'attr':{'class': 'label', 'class': 'checkbox'}}) }}</h3>
-                <h3>{{ form_row(Clients.optInMail, {'attr':{'class': 'label', 'class': 'checkbox'}}) }}</h3> 
-                   
+    {{ form_start(Clients) }}
+            {{ form_row(Clients.prenom) }}
+            {{ form_row(Clients.nom) }}
+            {{ form_row(Clients.telephone) }}
+            {{ form_row(Clients.optInSms) }}
+            {{ form_row(Clients.optInMail) }}
+            {{ form_row(Clients.dateNaissance) }}
+            {{ form_row(Clients.nombreEnfant) }}
+
             <div id="bouton">
-                <button type="submit" class="btn ocre">Valider</button>
-            </div>
-            </div>
-        </article>  
-              
-        {{ form_end(Clients) }}
-    </section>
-</main>    
+				<button type="submit" class="btn ocre">Valider</button>
+			</div>
+            
+    {{ form_end(Clients) }}
 {% endblock %}
