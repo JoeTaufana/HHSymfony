@@ -1,23 +1,15 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta
-		charset="UTF-8">
-
-		{# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
-		
-		<link rel="stylesheet" href="{{ asset('css/style.css') }}">
-		
-		{#<link rel="stylesheet" href="{{ asset('css/creation.css') }}">#}
-		{# <link rel="stylesheet" href="{{ asset('css/creation.css') }}"> #}
-
-		{% block stylesheet %}
-
-		{% endblock %}
+		<meta charset="UTF-8">
+	{% block stylesheets %}
+				<link rel="stylesheet" href="{{asset('css/style.css')}}">
+			{% endblock %}
 
 		{# {% block javascripts %}
-		            #{{ encore_entry_script_tags('app') }}
-		        {% endblock %} #}
+				            #{{ encore_entry_script_tags('app') }}
+				        {% endblock %} #}
+
 	</head>
 	<header>
 		    {% block header %}
@@ -75,46 +67,37 @@
 		<script src="{{ asset('js/popupNav.js') }}"></script>
 	</body>
 
-
-	{% block footer %}
-		<footer>
-			<div id="logo_white">
-				<img src="{{ asset('logo/LOGO_white.svg') }}" alt=" logo blanc">
-			</div>
-			<div id="liens">
-				<ul>
-					<li>
-						<a href="{{ asset('js/popupNav.js') }}">Accueil</a>
-					</li>
-					<li>
-						<a href="#">A propos</a>
-					</li>
-					<li>
-						<a href="#">Conditions d'utilisation</a>
-					</li>
-				</ul>
-				<div>
-					<img src="{{ asset('img/clou.svg') }}" alt="">
-				</div>
-				<ul>
-					<li><a href="#">Confidentialité</a></li>
-					<li><a href="#">Contactez-nous</a></li>
-					<li><a href="#">Mentions légales</a></li>
-				</ul>
-			</div>
-			<div id="reseaux">
-				<div>
-					<a href="#"><img src="{{ asset('icones/instagram.svg') }}" alt="Nous suivre sur instagram"></a>
-				</div>
-				<div>
-					<a href="#"><img src="{{ asset('icones/facebook.svg') }}" alt="Nous suivre sur facebook"></a>
-				</div>
-				<div>
-					<a href="#"><img src="{{ asset('icones/pinterest.svg') }}" alt="Nous suivre sur pinterest"></a>
-				</div>
-			</div>
-		</div>
-	</html>
-</footer>
-{% endblock footer %}
+    
+        {% block footer %}
+        <footer>   
+        <div id="logo_white">
+            <img src="{{ asset('logo/LOGO_white.svg') }}" alt=" logo blanc">
+        </div>
+        <div id="liens">
+            <ul>
+                <li><a class="footerA" href="#">Accueil</a></li>
+                <li><a class="footerA" href="#">A propos</a></li>
+                <li><a class="footerA" href="#">Conditions d'utilisation</a></li>
+            </ul>
+            <div>
+                <img src="{{ asset('img/clou.svg') }}" alt="">
+            </div>
+            <ul>
+                <li><a class="footerA" href="#">Confidentialité</a></li>
+                <li><a class="footerA" href="#">Contactez-nous</a></li>
+                <li><a href="#">Mentions légales</a></li>
+            </ul>
+        </div>
+        <div id="reseaux">
+            <div><a href="#"><img src="{{ asset('icones/instagram.svg') }}"
+                        alt="Nous suivre sur instagram"></a></div>
+            <div><a href="#"><img src="{{ asset('icones/facebook.svg') }}"
+                        alt="Nous suivre sur facebook"></a></div>
+            <div><a href="#"><img src="{{ asset('icones/pinterest.svg') }}"
+                        alt="Nous suivre sur pinterest"></a></div>
+        </div>
+        </div>
+         
+    </footer>
+    {% endblock footer %}
 </html>
