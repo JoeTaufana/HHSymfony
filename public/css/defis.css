@@ -6,13 +6,13 @@
     background: var(--gris);
 }
 
-h2{
+/* h2{
     margin: 30px;
-    color: var(--vert);
-    font-size: 40px;
+    /*color: var(--vert);*/
+    /* font-size: 40px;
     font-family: 'Oswald';
     font-weight: bold;
-}
+} */
       
 #AjoutMembre_Ajouter {
     border: 1px solid var(--ocre);
@@ -45,18 +45,18 @@ h2{
     height: 25px;
     width: 500px;
     border-radius: 7px;
-    color: var(--vert);
+    /*color: var(--vert);*/
     opacity: 75%;
 }
 #age.colonne1{
     width: 200px;
 }
 
-input{
+/* input{
         background: var(--gris);
         border: 1px solid var(--ocre);
         padding-bottom: 10px;
-    }
+    } */
       
 
       /* ******************************ChoixDefi********************************************** */
@@ -95,7 +95,7 @@ input{
         margin-top: 25px;
         border-radius: 20px;
     }
-img{
+.imgDefi{
         border-radius: 20px;
         border: #F2F2F2 1px solid;
     }
@@ -122,9 +122,9 @@ h1{
     transform: rotate(-15deg);
     text-align: center;
     margin: 66px 0px;
-    font-family: 'Oswald';
-    font-size: 66px;
-    font-weight: bold;
+    /* font-family: 'Oswald'; */
+    /* font-size: 66px;
+    font-weight: bold; */
     color: #385a64;
 }
 
@@ -148,7 +148,7 @@ h1{
 P{
     text-align: justify;
     margin: 60px 0px;
-    font-family: 'Oswald';
+    /* font-family: 'Oswald'; */
     font-size: 30px;
     font-weight: semi-bold;
     color: #385a64;
@@ -172,27 +172,28 @@ P{
 }
 /*************************DéfiYoga1*************************/
 
-h1{
-    color: var(--vert);
+/* h1{
+    /*color: var(--vert);
     font-family: 'Oswald';
     font-weight: bold;
     font-size: 66px;
     transform: rotate(-15deg);
-}
+} */
 
 
-h2{
+.titre2defi{
     font-family: 'Oswald';
     font-weight: bold;
     margin-top: 35px;
-    color: var(--vert);
+    /*color: var(--vert);*/
     justify-content: center;
     text-align: center;
-    }
+    font-size: 35px;
+}
 
 p{
-    font-family: oswald;
-    color: var(--vert);
+    /* font-family: oswald; */
+    /*color: var(--vert);*/
     justify-content: justify;
     font-size: 25px;
     padding: 15px;
@@ -214,7 +215,10 @@ p{
     width: 50%;
     justify-content: center; 
    }
-  
+
+.titreDroite p{
+    font-size: 40px;
+}
 
 main{
     height: 100vh;
@@ -271,17 +275,17 @@ main{
     border-bottom: 5px;
 }
 
-btn jaune{
+/* btn jaune{
     display: flex;
     flex-direction: column;
     border: 2px solid blue;
     width: 30px;
-    }
+    } */
 
 .btn{
-    text-transform: uppercase;
+    /* text-transform: uppercase;
     border-radius: 12px;
-    padding: 10px 10px;  
+    padding: 10px 10px;   */
     font-weight: bold;
     width: fit-content;
     display: flex;
@@ -298,20 +302,20 @@ btn jaune{
     margin-bottom: 30px;
    }
 
-.titreGauche, .titreDroite{
+/* .titreGauche, .titreDroite{
     display: flex;
     width: 50%;
     justify-content: center; 
    }
-  
+   */
 
-main{
+/* main{
     height: 100vh;
     background-color: #F2F2F2;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
+} */
 
 #FunVerso1{
     display: flex;
@@ -357,7 +361,7 @@ main{
 
 }
 
-btn jaune{
+/* btn jaune{
     display: flex;
     flex-direction: column;
     border: 2px solid blue;
@@ -371,7 +375,7 @@ btn jaune{
     font-weight: bold;
     width: fit-content;
     display: flex;
-}
+} */
 
 /* ********************** defiGourmand.html */
 #introGourmand{
@@ -383,20 +387,26 @@ btn jaune{
     margin-bottom: 30px;
    }
 
-.titreGauche, .titreDroite{
+
+
+/* .titreGauche, .titreDroite{
     display: flex;
     width: 50%;
     justify-content: center; 
    }
-  
+   */
 
-main{
+.titreDroite p{
+    font-size: 40px;
+}
+
+/* main{
     height: 100vh;
     background: #F2F2F2;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
+} */
 
 #GourmandVerso1{
     display: flex;
@@ -440,33 +450,32 @@ main{
     border-radius: 30px;
     background: #F2F2F2;
     margin-right: 20px;
-/
 }
 .fondTexte p{
     border-bottom: 5px;
 }
 
-btn ocre{
+/* btn ocre{
     display: flex;
     flex-direction: column;
     width: 30px;
-    }
+    } */
 
-.btn{
+/* .btn{
     text-transform: uppercase;
     border-radius: 12px;
     padding: 10px 10px;  
     font-weight: bold;
     width: fit-content;
     display: flex;
-}
-p{
+} */
+/* p{
     font-family: oswald;
-    color: var(--vert);
+    /*color: var(--vert);
     justify-content: justify;
     font-size: 25px;
     padding: 15px;
-}
+} */
 
 main{
     background: url(../img/Splash.svg) 4% 60%,

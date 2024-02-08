@@ -3,7 +3,7 @@
 {% block title %}defiGourmand{% endblock %}
 
 {%block stylesheet%}
-    <link rel="stylesheet" href="{{ asset('css/cssLynda.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/defis.css') }}">
 
 	{# <link rel="stylesheet" href="{{ asset('css/creation.css') }}">
     <link rel="stylesheet" href="{{ asset('css/login.css') }}">
@@ -25,20 +25,20 @@
                               </h1>
                     </div>
                     <div class="titreDroite">
-                              <h2>
+                              <p>
                                         Une petite faim? <br>
                                         Lions l’utile à l’agréable une recette facile à faire en famille.
-                              </h2>
+                              </p>
           </section>
        
 
           <section id="GourmandVerso1">
-                    <h2> Crêpes </h2>
+                    <h2 class="titre2defi"> Crêpes </h2>
                     <div id="gourmandVerso1_bloc">
                               
                               <div class="imageGourmand_blocGauche">
                                       
-                                        <img src="../img/crêpes.jpg" alt="">
+                                        <img class="imgDefi" src="img/crêpes.jpg" alt="">
                               </div>                             
                               <div class="gourmandVerso1_blocDroit">
                                         
@@ -65,7 +65,7 @@
                               </div>
                                                  
                     </div>
-                    <a href="unNouveauDefi.html" class="btn ocre"> Un nouveau Défi</a> 
+                    <a href="{{path('app_nouveauDefi')}}" class="btn ocre"> Un nouveau Défi</a> 
           </section>
           </main>
 
