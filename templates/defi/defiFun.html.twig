@@ -3,7 +3,7 @@
 {% block title %}defiFun{% endblock %}
 
 {%block stylesheet%}
-    <link rel="stylesheet" href="{{ asset('css/cssLynda.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/defis.css') }}">
 
 	{# <link rel="stylesheet" href="{{ asset('css/creation.css') }}">
     <link rel="stylesheet" href="{{ asset('css/login.css') }}">
@@ -24,14 +24,14 @@
                               </h1>
                     </div>
                     <div class="titreDroite">
-                              <h2>
+                              <p>
                               En panne d’inspiration pour occuper les enfants ?
-                              </h2>
+                              </p>
           </section>
        
 
           <section id="FunVerso1">
-                    <h2>“Kim toucher” - Jeu sur les 5 sens </h2>
+                    <h2 class="titre2defi">“Kim toucher” - Jeu sur les 5 sens </h2>
                     <div id="funVerso1_bloc">
                               <div class="fun_blocGauche">
                                         <p>
@@ -61,7 +61,7 @@
                               </div>
                                                  
                     </div>
-                    <a href="unNouveauDefi.html" class="btn jaune"> Un nouveau Défi</a> 
+                    <a href="{{path('app_nouveauDefi')}}" class="btn jaune"> Un nouveau Défi</a> 
           </section>
           </main>
 <script src=""></script>

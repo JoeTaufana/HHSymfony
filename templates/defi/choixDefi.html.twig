@@ -3,7 +3,7 @@
 {% block title %}Choix3Défis!{% endblock %}
 
 {% block stylesheet %}
-    <link rel="stylesheet" href="{{ asset('css/cssLynda.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/defis.css') }}">
 
 	{# <link rel="stylesheet" href="{{ asset('css/creation.css') }}">
     <link rel="stylesheet" href="{{ asset('css/login.css') }}">
@@ -29,7 +29,7 @@
                     <div class="choixContainer">
                         <div class="gourmand">
                             <div class="image">
-                                <img src="../img/cuisine.jpg" alt="Famille qui cuisine">
+                                <img class="imgDefi" src="{{ asset('img/cuisine.jpg') }}" alt="Famille qui cuisine">
                             </div>
                             <div class="containerText">
                                 <a href="{{path('app_défiGourmand')}}"><h3>Défi gourmand</h3></a>
@@ -37,7 +37,7 @@
                         </div>
                         <div class="fun">
                             <div  class="image">
-                                <img src="../img/fun.jpg" alt="4 personnes qui sont heureuses avec une coupe">
+                                <img class="imgDefi" src="{{ asset('img/fun.jpg') }}" alt="4 personnes qui sont heureuses avec une coupe">
                             </div>
                             <div class="containerText">
                                 <a href="{{path('app_défiFun')}}"><h3>Défi fun</h3></a>
@@ -45,7 +45,7 @@
                         </div>
                         <div class="zen">
                             <div  class="image">
-                                <img src="../img/Zen.jpg" alt="Illustration d'une personne faisant la position du lotus">
+                                <img class="imgDefi" src="{{ asset('img/zen.jpg') }}" alt="Illustration d'une personne faisant la position du lotus">
                             </div>
                             <div class="containerText">
                                 <a href= "{{path('app_défiZen')}}"><h3>Défi zen</h3></a>
