@@ -1,0 +1,95 @@
+{% extends 'base.html.twig' %}
+
+{%block stylesheet%}
+    <link rel="stylesheet" href="{{ asset('css/agenda.css') }}">
+{%endblock%}
+
+{% block title %}Agenda{% endblock %}
+
+{% block body %}
+
+<!-- ******************************début aside************************ -->
+<main id="agenda_main">
+   <section id="agenda_section">
+        <aside id="agenda_aside">
+            <div id=agendaIllustration>
+                <img src="{{asset('img/famille_voiture.svg')}}" alt="famille jouant aux petites voitures">
+            </div>
+        </aside>
+
+<!-- ******************************début planning********************** -->
+        <section id="agenda">
+            <H2 id="today">Aujourd'hui nous sommes le
+                <script>
+                    date = new Date().toLocaleDateString();
+                    document.write(date);
+                </script>
+            </H2>
+            <div id="agenda_navigation">
+                <nav>
+                    <a href="#" class="btn ocre" id="openPopupRdv">ajouter un rdv</a>
+                    <a href="#" class="btn jaune" id="openPopupRecap">ajouter un défi</a>
+                    <a href="#">voir aujourd'hui</a>
+                </nav>
+            </div>
+            <div class="wrapper">
+                <header>
+                    <p class="current-date"></p>
+                    <div class="icons">
+                        <span id="prev" class="material-symbols-rounded"><</span>
+                        <span id="next" class="material-symbols-rounded">></span>
+                    </div>
+                </header>
+                    <div class="calendar">
+                        <ul class="weeks">
+                            <li>Dim</li>
+                            <li>Lun</li>
+                            <li>Mar</li>
+                            <li>Mer</li>
+                            <li>Jeu</li>
+                            <li>Ven</li>
+                            <li>Sam</li>
+                        </ul>
+                        <ul class="days"></ul>
+                    </div>
+            </div>
+        </section>
+    </section>
+
+<!-- ***********************début agenda********************** -->
+    <div id="agendaTxt">
+        <div><img src="{{asset('img/clou_jaune.svg')}}" alt="#"></div>
+        <p>Orchestrer votre quotidien de façon harmonieuse n'a jamais été aussi facile !
+            Car chez nous, la planification n'est pas simplement une routine,
+            c'est une mélodie de découvertes et de bien-être.
+            Bienvenue dans l'avenir de la planification,
+            où chaque journée est une partition que vous écrivez selon vos envies.</p>
+    </div>
+    
+<!-- ************************ Pop-up récapitulatif de la journée *************-->
+    <div id="popupJournee">
+        <h2>Ma journée</h2>
+        <div>
+            <div><img src="{{asset('img/clou_jaune.svg')}}" alt=""></div>
+            <div>
+                <p>10:30 Rdv Medecin</p>
+                <p>10:30 Rdv Medecin</p>
+                <p>10:30 Rdv Medecin</p>
+                <p>10:30 Rdv Medecin</p>
+                <p>10:30 Rdv Medecin</p>
+            </div>
+        </div>
+    </div>
+<!-- <script>
+        var openPopupRecap = document.getElementById('openPopupRecap');
+        var popupJournee = document.getElementById('popupJournee');
+        openPopupRecap.addEventListener('click', function() {
+            popupJournee.style.display = 'block';
+        });
+    </script> -->
+</main>
+    {% block javascripts %}
+        <script src="{{asset('js/agenda.js')}}" async></script>
+    {% endblock %}
+
+{% endblock %}
