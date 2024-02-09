@@ -7,6 +7,7 @@ use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 use App\Entity\User;
 
+
 #[ORM\Entity(repositoryClass: ClientsRepository::class)]
 class Clients
 {
@@ -152,6 +153,18 @@ class Clients
     public function setUser(User $user): static
     {
         $this->user = $user;
+
+        return $this;
+    }
+
+    public function getClients(): ?Clients
+    {
+        return $this->clients;
+    }
+
+    public function setClients(Clients $clients): static
+    {
+        $this->clients = $clients;
 
         return $this;
     }
