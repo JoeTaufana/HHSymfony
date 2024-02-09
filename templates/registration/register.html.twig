@@ -17,18 +17,21 @@
 				{{ form_start(registrationForm) }}
 
 				<div id="display_start">
-					<h3>{{ form_row(registrationForm.email, {'attr':{'class': 'input'}}) }}</h3>
+					<h3>{{ form_row(registrationForm.email, {'attr':{'class': 'input', 'class': 'label'}}) }}</h3>
 
-					<h3>{{ form_row(registrationForm.plainPassword.first, {label: 'Mot de passe', 'attr':{'class': 'input'}}) }}</h3>	
+					<h3>{{ form_row(registrationForm.plainPassword.first, {label: 'Mot de passe', 'attr':{'class': 'input', 'class': 'label'}}) }}</h3>	
 
-					<h3>{{ form_row(registrationForm.plainPassword.second, {label: 'Confirmer le mot de passe', 'attr':{'class': 'input'}}) }}</h3>
+					<h3>{{ form_row(registrationForm.plainPassword.second, {label: 'Confirmer le mot de passe', 'attr':{'class': 'input', 'class': 'label'}}) }}</h3>
 
-					<h3>{{ form_row(registrationForm.agreeTerms,{label: 'Accepter les conditions  ', 'attr':{'id': 'caseCocher'}}) }}</h3>
+					<h3>{{ form_row(registrationForm.agreeTerms,{label: 'Accepter les conditions  ', 'attr':{'class': 'checkbox'}}) }}</h3>
 				</div>
 
 				<div id="bouton">
 					<button type="submit" class="btn ocre">Valider</button>
+
 				</div>
+
+				
 				{{ form_end(registrationForm) }}
 
 

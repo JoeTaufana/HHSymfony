@@ -47,10 +47,16 @@
 
 		<div id="popupPhoto">
 			<ul>				
-			    <li><a href="{{ path('login') }}">Connexion</a></li>
-                <li><a href="#">Ma tribu</a></li>
-				<li><a href="#">Mon profil</a></li>
-                <li><a href="{{ path('logout') }}" class="deconnexion">Déconnexion</a></li>
+			    
+				{% if app.user %}
+					<li><a href="#">Ma tribu</a></li>
+				
+					<li><a href="{{ path('app_editClient', {'id': app.user.id}) }}">Mon profil</a></li>
+			
+					<li><a href="{{ path('logout') }}" class="deconnexion">Déconnexion</a></li>
+				{% else %}
+					<li><a href="{{ path('login') }}">Connexion</a></li>
+				{% endif %}	
             </ul>
         </div>
 

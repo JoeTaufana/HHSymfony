@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheet %}
+	<link rel="stylesheet" href="{{ asset('css/clients.css') }}">
+{% endblock %}
+
+{% block title %}Supprimer mon compte{% endblock %}
+
+{% block body %}
+    <h1>Confirmation de suppression</h1>
+    <p>Voulez-vous vraiment supprimer le client "{{ client.nom }} {{ client.prenom }}" ?</p>
+
+    {{ form_start(deleteForm, {'action': path('deleteClient', {'id': client.id}), 'method': 'DELETE'}) }}
+        <button type="submit">Oui, supprimer</button>
+    {{ form_end(deleteForm) }}
+
+    <a href="{{ path('app_clients') }}">Annuler</a>
+{% endblock %}

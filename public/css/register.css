@@ -19,6 +19,8 @@ main{
     box-shadow: 4px 4px 10px grey;
     border-radius: 10px;
     color: #385A64;
+    display: flex;
+    flex-direction: column;
 }
 
 #inscription h1{
@@ -33,16 +35,16 @@ main{
     margin-top: 3%;
     color: #385A64;
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-/* article h3{
+#display_start h3{
     letter-spacing: 1px;
 }
 
 .label{
-    width: 100%;
+    width: 70%;
     height: 35px;
     margin: 2% 0 5% 0;
     padding: 0 2%;
@@ -57,8 +59,6 @@ main{
     flex-direction: column;
     justify-content: space-between;
 }
-
-*/
 
 .btn{
     font-weight: bold;

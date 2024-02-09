@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheet %}
+	<link rel="stylesheet" href="{{ asset('css/clients.css') }}">
+{% endblock %}
+
+{% block title %}Inscription{% endblock %}
+
+{% block body %}
+<main>
+    <section id="profil">
+        <h1>Mon profil</h1>
+        {{ form_start(Clients) }}
+        <article>
+            <div id='profilClient'>        
+                <h3>{{ (Clients.nom, {'attr':{'class': 'input','class': 'label'}}) }}</h3>
+                <h3>{{ (Clients.prenom, {'attr':{'class': 'input','class': 'label'}}) }}</h3>
+                <h3>{{ (Clients.dateNaissance, {'attr':{'class': 'label'}}) }}</h3>
+                <h3>{{ (Clients.nombreEnfant, {'attr':{'class': 'label'}}) }}</h3>
+            </div>  
+            <div id='preferences'>  
+                <h3>{{ (Clients.telephone, {'attr':{'class': 'input','class': 'label'}}) }}</h3>
+                <h3>{{ (Clients.optInSms, {'attr':{'class': 'label', 'class': 'checkbox'}}) }}</h3>
+                <h3>{{ (Clients.optInMail, {'attr':{'class': 'label', 'class': 'checkbox'}}) }}</h3> 
+                   
+            <div id="bouton">
+                <a href="#" class="btn jaune">Modifer mon profil</a>
+                <button type="submit" class="btn ocre">Valider</button>
+            </div>
+        
+        </article>  
+              
+        {{ form_end(Clients) }}
+    </section>
+</main>    
+{% endblock %}
