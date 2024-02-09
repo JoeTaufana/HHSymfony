@@ -1,16 +1,25 @@
 {% extends 'base.html.twig' %}
+{% block title %}S'inscrire{% endblock %}
 
 {% block stylesheet %}
 	<link rel="stylesheet" href="{{ asset('css/register.css') }}">
 {% endblock %}
 
-{% block title %}Inscription{% endblock %}
-
-
 {% block body %}
+<<<<<<< HEAD
 	<main>
 		<section id="inscription">
 		<h1>S'inscrire</h1>
+=======
+
+<main>
+<section id="inscription">
+<h2>S'inscrire</h2>
+	{{ form_errors(registrationForm) }}
+		{{ form_start(registrationForm) }}
+			<div id="display_start">
+				{{ form_row(registrationForm.email, {'attr':{'class': 'input'}}) }}
+>>>>>>> anwar
 
 			<h2>{{ form_errors(registrationForm) }}</h2>
 

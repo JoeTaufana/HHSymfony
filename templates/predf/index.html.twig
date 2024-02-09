@@ -1,0 +1,73 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PredfController!{% endblock %}
+
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="{{ asset('css/predf.css') }}">
+{% endblock %}
+
+{% block body %}
+
+<main>
+    <section>
+        <div id="ideaDivOne">
+            <h1>" Découvrez les Défis <br>
+                avec nos Cartes Magiques ! "
+            </h1>
+        
+                <p id="paragraphe">
+                    Plongez dans un monde d'apprentissage ludique
+                    avec nos trois cartes à retourner qui vous réservent des défis palpitants! 
+                    Chaque carte offre une expérience unique
+                    pour stimuler l'imagination ou le bien-être. 
+                </p>
+         
+        </div>
+        
+        <div id="ideaDivCarteDefi">
+
+            <div class="ideaDivDefi" id="ideaDivDefiGourmand">
+                <p >Le "Défi Gourmand" transformera la cuisine en terrain de 
+                    jeu avec des recettes simples et rapides,
+                    parfaite pour des moments gourmands en famille.
+                </p>
+                <div class="ideaDivContainer"  id="ideaDivContainerGourmand">
+                        <img class="imgDefi" src="{{asset('img/cuisine.jpg')}}" alt="une famille à la cuisine">
+                        <button>
+                            <a href="#">défi gourmand</a>
+                        </button>
+                </div>
+            </div>
+           
+            <div class="ideaDivDefi" id="ideaDivDefiFun">
+                <div class="ideaDivContainer" id="ideaDivContainerFun">
+                    <img class="imgDefi" src="{{asset('img/fun.jpg')}}" alt="quatre personnes">
+                    <button>
+                        <a href="#">défi fun</a>
+                    </button>
+                </div>
+                <p id="ideaPDefiFun">Ensuite, le "Défi Fun" promet une dose d'activité créative 
+                    où que vous soyez, à tout moment de la journée. 
+                    Le seul outil nécessaire : esprit! </p> 
+            </div>
+
+
+            <div class="ideaDivDefi" id="ideaDivDefiZen">
+                <p >Le "Défi Gourmand" transformera la cuisine en terrain de 
+                    jeu avec des recettes simples et rapides,
+                    parfaite pour des moments gourmands en famille.
+                </p>
+                <div class="ideaDivContainer" id="ideaDivContainerZen">
+                         <img class="imgDefi" src="{{asset('img/zen.jpg')}}" alt="Une fille qui pratique du Yoga">
+                        <button>
+                            <a href="#">défi zen</a>
+                        </button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+   </main>
+
+{% endblock %}

@@ -1,0 +1,417 @@
+/* *****************************Fonts******************************************* */
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand-Light.eot');
+    src: url('../fonts/Quicksand-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Quicksand-Light.woff2') format('woff2'),
+        url('../fonts/Quicksand-Light.woff') format('woff'),
+        url('../fonts/Quicksand-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand-Light_1.eot');
+    src: url('../fonts/Quicksand-Light_1.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Quicksand-Light_1.woff2') format('woff2'),
+        url('../fonts/Quicksand-Light_1.woff') format('woff'),
+        url('../fonts/Quicksand-Light_1.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand-Light_2.eot');
+    src: url('../fonts/Quicksand-Light_2.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Quicksand-Light_2.woff2') format('woff2'),
+        url('../fonts/Quicksand-Light_2.woff') format('woff'),
+        url('../fonts/Quicksand-Light_2.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand-Light_3.eot');
+    src: url('../fonts/Quicksand-Light_3.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Quicksand-Light_3.woff2') format('woff2'),
+        url('../fonts/Quicksand-Light_3.woff') format('woff'),
+        url('../fonts/Quicksand-Light_3.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Regular.eot');
+    src: url('../fonts/Oswald-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Oswald-Regular.woff2') format('woff2'),
+        url('../fonts/Oswald-Regular.woff') format('woff'),
+        url('../fonts/Oswald-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Regular_1.eot');
+    src: url('../fonts/Oswald-Regular_1.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Oswald-Regular_1.woff2') format('woff2'),
+        url('../fonts/Oswald-Regular_1.woff') format('woff'),
+        url('../fonts/Oswald-Regular_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Regular_2.eot');
+    src: url('../fonts/Oswald-Regular_2.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Oswald-Regular_2.woff2') format('woff2'),
+        url('../fonts/Oswald-Regular_2.woff') format('woff'),
+        url('../fonts/Oswald-Regular_2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Regular_3.eot');
+    src: url('../fonts/Oswald-Regular_3.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Oswald-Regular_3.woff2') format('woff2'),
+        url('../fonts/Oswald-Regular_3.woff') format('woff'),
+        url('../fonts/Oswald-Regular_3.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/* ***************************Variables*************************************************/
+:root{
+    --vert: #385a64;
+    --jaune: #F2B705;
+    --ocre: #BF5F56;
+    --rose: #F2A29B;
+    --gris: #F2F2F2;
+
+}
+/* ***********************************Pages*************************************** */
+
+main {
+    margin-bottom: 80px;
+    scroll-behavior: smooth;
+    background-color: var(--gris); 
+    background: url(../img/Splash.svg) 5% 10%,
+    url(../img/Splash.svg) 90% 25%,
+    url(../img/Splash.svg) 100% 100%,
+    url(../img/EllipseVert.svg) 105% 65%,
+    url(../img/Ellipse_gras_jaune.svg) 0% 55%,
+    url(../img/Ellipse_gras_ocre.svg) 20% 85%;
+background-repeat: no-repeat;
+
+     
+} 
+
+
+#introduction{
+    line-height: 6px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 50px;
+    padding-top: 50px;
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-direction: column;
+}
+
+#introduction>h1{
+    color: var(--vert);
+    font-size: 45px;
+    font-family: Oswald;
+    font-weight: bold;
+    padding: 20px;
+    margin: 20px;
+}
+
+#firstSection>#introduction>p{
+    color: var(--vert);
+    font-size: 20px;
+    font-family: Quicksand;
+    font-weight: bold;
+   /* text-shadow: 0px 5px 2px var(--vert); */
+}
+
+#bouton{
+    display: flex;
+    flex-direction: row;
+    justify-content:  center;
+    margin-left: 40%;
+    margin-bottom: 20px;
+}
+#bouton a{
+    text-decoration: none;
+    color: var(--vert);
+}
+
+button{
+    margin: 10px;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    color: var(--vert);
+    font-size: 16px;
+    font-family: Oswald;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+ #btnParent:hover a{
+    color: var(--ocre);
+   
+}
+
+#btnEnfant:hover a{
+    color: var(--ocre);
+   
+}
+/* *******************************Caroussel************************************ */
+/* *************************mettre les images dans le slider*********************************************** */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    max-width: 800px;
+    margin-left: 19%;
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: var(--jaune);
+    padding: 2px 16px;
+    color: var(--vert);
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+    /****************************second-section************************************/
+    #secondSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #secondSection>#paragrapheSecondSection>p{
+        color: var(--vert);
+        font-size: 20px;
+        font-family: Oswald;
+        font-weight: bold;
+        text-align: center;
+        padding: 40px;
+        margin: 20px;  
+    }
+
+    #paragrapheSecondSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        text-align: center; 
+        
+    }
+    
+    .divContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 25px;
+        width: 700px;
+        border-radius: 15px;
+        box-shadow: 8px 8px 4px var(--jaune);
+        background-color: white;
+    }
+
+    .image {
+        padding: 20px;
+        width: 230px;
+        height: 220px;
+    }
+
+    .imgCol {
+        width: 180px;
+        height: 180px;
+        
+    }
+
+    .articleIntroduction{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        margin: 0px auto;
+    }
+
+
+    /* Pour enlever le soulignement et rendre sa couleur initiale */
+    .divContainer .articleIntroduction h2 a{
+        color: var(--ocre);
+        text-decoration: none;
+    }
+
+    #secondSection .articleIntroduction p{
+        font-size: Quicksand;
+        font-family: 18px;
+        color: var(--vert);
+    }
+    
+/* *************************mediaquery********************************** */
+
+@media only screen and (max-width:768px){
+    body {
+        background: none;
+    }
+    #introduction{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        right: 10px;
+       
+    }
+    
+
+    #introduction>h1{
+        font-size: 35px;
+        line-height: 25px;
+    
+    }
+    
+    #firstSection>#introduction>p{
+        font-size: 20px;
+        line-height: 15px;
+    }
+    
+    #bouton{
+        margin-left: 10%;
+    } 
+
+    button{
+        padding: 5px 10px;
+        font-size: 13px;
+       
+    }
+    
+    #slider{
+        width: 100%;
+    
+    }
+    #imgSousSliderRow{
+        width: 300px;
+    }
+    #blocBasketteur, #blocFamille{
+        display: none;
+    }
+    .divDisplayBloc{
+        width: 300px;
+       margin-right: 20px;
+      
+    }
+
+    #titre {
+        font-size: 10px;
+        margin-right: 20px;
+    }
+    
+   #date{
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    
+    #secondSection .divContainer{
+        display: flex;
+        flex-direction: column; 
+        width: 100%;
+    }
+    } 
+

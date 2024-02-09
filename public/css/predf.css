@@ -1,0 +1,285 @@
+
+/* *********************************Variables************************************** */
+/* variables pour les couleurs */
+:root{
+    --vert: #385a64;
+    --jaune: #F2B705;
+    --ocre: #BF5F56;
+    --rose: #F2A29B;
+    --gris: #F2F2F2;
+    
+
+}
+/* *********************************pages***************************************** */
+
+
+/* le comportement de body
+et la mise des images dans le background  */
+main {
+    margin-bottom: 80px;
+    scroll-behavior: smooth;
+    background-color: var(--gris);
+    background: url(../img/Splash.svg) 5% 10%,
+    url(../img/Splash.svg) 90% 35%,
+    url(../img/Splash.svg) 100% 100%,
+    url(../img/EllipseVert.svg) 105% 65%,
+    url(../img/Ellipse_gras_jaune.svg) 0% 55%,
+    url(../img/Ellipse_gras_ocre.svg) 10% 85%;
+
+/* les images sont pas répétées, elles sont mises dans la place indiquée une seule fois */
+    background-repeat: no-repeat;
+   
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* en flex pour mettre h1 et p en colonne */
+#ideaDivOne{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 800px;
+    padding: 60px;
+    text-align: center;
+    /* border: 1px solid black; */
+   
+  
+}
+
+section #ideaDivOne h1{
+    color: var(--vert);
+    font-size: 40px;
+    font-family: Oswald;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    text-align: center;
+   
+    
+}
+
+section #ideaDivOne p{
+    color: var(--vert);
+    opacity: 90%;
+    font-size: 20px;
+    font-family: Oswald;
+    text-align: center;
+    margin-left: 0px;
+    line-height: 40px;
+}
+
+/* div container qui contient les trois divs représentatifs des défis */
+#ideaDivCarteDefi{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: -40px;
+
+}
+/* div container de l'image et bouton pour renvoyer à la page de défi */
+.ideaDivContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 280px;
+    padding: 30px;
+    border-radius: 15px;
+   
+}
+
+#ideaDivContainerGourmand{
+    background-color: var(--ocre);
+}
+
+#ideaDivContainerFun{
+    background-color: var(--jaune);
+}
+
+#ideaDivContainerZen{
+    background-color: var(--vert);
+}
+
+.ideaDivDefi>p{
+    color: var(--vert);
+    font-size: 20px;
+    font-family: Quicksand;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: start; 
+    margin: 20px;
+}
+
+main .ideaDivContainer .imgDefi {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px; 
+}
+
+.ideaDivDefi{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    border-radius: 15px;
+    background-color: white;
+    padding: 15px;
+    margin-left: 240px;
+    margin: 30px  auto;
+}
+
+#ideaDivDefiGourmand{
+    box-shadow: 10px 10px 6px var(--ocre);
+    border: 5px solid var(--ocre);
+    
+}
+
+#ideaDivDefiFun{
+    box-shadow: 10px 10px 6px var(--jaune);
+    border: 5px solid var(--jaune)
+}
+
+#ideaDivDefiZen{
+    box-shadow: 10px 10px 6px var(--vert);
+    border: 5px solid var(--vert)
+}
+
+button{
+    width: 130px;
+    padding: 10px;
+    text-transform: uppercase;
+    color: var(--vert);
+    font-family: Oswald;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 15px;
+    border: none;
+    margin: 20px;
+   
+}
+
+.ideaDivDefi  .ideaDivContainer  a {
+    text-decoration: none;
+    color: var(--vert);
+}
+
+#ideaDivContainerFun{
+    
+    background-color: var(--jaune);
+   
+}
+
+#ideaDivContainerZen{
+    background-color: var(--vert);
+    
+}
+
+
+    /* For mobile phones: */
+@media only screen and (max-width: 768px) {
+
+    body {
+       
+        background: 
+        url(images/Splash.svg) -40% 12%,
+        /* url(images/Déco\ jaune.svg) bottom 35% left -7%, */
+        url(images/Splash.svg) 0% 90%,
+        url(images/Ellipse_gras_jaune.svg) 0 45%;
+        background-repeat: no-repeat;
+    } 
+    #ideaDivOne{
+        /* margin-left: 20px;  */
+        width: 250px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    
+    }
+    section #ideaDivOne h1{
+        color: var(--vert);
+        font-size: 40px;
+        font-family: Oswald;
+        margin-top: 20px;
+        margin-bottom: 60px;
+        text-align: center;
+       
+        
+    }
+    section #ideaDivOne p{
+        color: var(--vert);
+        opacity: 90%;
+        font-size: 20px;
+        font-family: Oswald;
+        text-align: start;
+        margin-left: 5px;
+        line-height: 25px;
+    }
+
+    /* For mobile phones: */
+    .ideaDivDefi {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        padding: 10px;
+        margin-left: 10%; 
+    }
+
+    .ideaDivContainer{
+        width: 150px;
+        height: 180px;
+        padding: 10px;
+        border-radius: 15px;
+       
+    }
+
+    .ideaDivDefi>p{
+        color: var(--vert);
+        font-size: 16px;
+        font-family: Quicksand;
+        font-weight: bold;
+        line-height: 30px;
+        text-align: start; 
+        margin: 5px;
+    }
+
+    
+    
+    img {
+        width: 120px;
+        height: 120px;
+        border-radius: 10px; 
+    }
+    button{
+        width: 100px;
+        padding: 10px;
+        text-transform: uppercase;
+        color: var(--vert);
+        font-family: Oswald;
+        font-size: 11px;
+        font-weight: bold;
+        border-radius: 15px;
+        border: none;
+        margin: 10px;
+       
+    }
+
+    #ideaDivOne{
+        margin-left: 0px;
+    
+    }
+
+    #ideaDivCarteDefi{
+       margin-left: -80px;
+
+}
+
+    #ideaDivDefiGourmand, #ideaDivDefiFun, #ideaDivDefiZen{
+        width: 180px;
+    }
+  }
+

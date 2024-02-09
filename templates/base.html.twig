@@ -28,7 +28,7 @@
 		
         <nav id="navbar">
             <ul>
-                <li><a class="fd-bleu" href="#">
+                <li><a class="fd-bleu" href="{{path('app_agenda')}}">
                         <h2>agenda</h2>
                     </a></li>
                 <li><a class="fd-jaune" href="{{ path('app_défi') }}">
@@ -63,7 +63,7 @@
         <div id="popupNav">
             <ul>
 				<li><a href="{{ path('login') }}">Connexion</a></li>
-                <li><a href="#">Agenda</a></li>
+                <li><a href="{{path('app_agenda')}}">Agenda</a></li>
                 <li><a href="#">Défis</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Ma tribu</a></li>
@@ -103,7 +103,7 @@
 				<ul>
 					<li><a href="{{ path('app_confidentialite') }}">Confidentialité</a></li>
 					<li><a href="{{ path('app_contact') }}">Contactez-nous</a></li>
-					<li><a href=""{{ path('app_mentionsLegales') }}"">Mentions légales</a></li>
+					<li><a href="{{ path('app_mentionsLegales') }}">Mentions légales</a></li>
 				</ul>
 			</div>
 			<div id="reseaux">

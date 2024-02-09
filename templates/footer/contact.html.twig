@@ -1,18 +1,24 @@
 {% extends 'base.html.twig' %}
 
+{% block stylesheet %}
+    <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
+{% endblock %}
+
 {% block title %}Contact{% endblock %}
 
 {% block body %}
-    <h2>Contactez-nous</h2>
+<div class="center">
+    <h2 class="deux">Contactez-nous</h2>
 
 
     <section>
-        <h3>Adresse E-mail</h3>
-        <p>Pour nous contacter par e-mail, veuillez utiliser l'adresse suivante : <a href="mailto:{{ adresse e-mail de contact }}">[adresse e-mail de contact]</a>.</p>
+        <h3 class="trois">Adresse E-mail</h3>
+        <p class="paragraphe">Pour nous contacter par e-mail, veuillez utiliser l'adresse suivante : <a href="mailto: contact.hapyyhome@gmail.com">contact.hapyyhome@gmail.com</a>.</p>
     </section>
 
     <section>
-        <h3>Évolution Prochaine</h3>
-        <p>Nous travaillons actuellement sur la création d'un formulaire de contact plus simple. Restez à l'écoute pour les mises à jour !</p>
+        <h3 class="trois">Évolution Prochaine</h3>
+        <p class="paragraphe">Nous travaillons actuellement sur la création d'un formulaire de contact plus simple. Restez à l'écoute pour les mises à jour !</p>
     </section>
+</div>
 {% endblock %}

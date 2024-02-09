@@ -1,0 +1,113 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ArticleController!
+{% endblock %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+
+ <main id="blog_article_main">
+    <section id="blog_article_top">
+        <div id="blog_article_head">
+            <h1>Coin des parents</h1>
+            <h2>Votre compagnon en ligne, offrant des conseils pratiques,
+                 des astuces bienveillantes et des idées inspirantes pour enrichir votre expérience familiale.</h2>
+        </div>
+
+        <div id="blog_article_boutons">
+            <a  href="#" class="btn vert">astuces pour enfants</a>
+            <a href="#" class="btn ocre">astuces pour parents</a>
+        </div>
+
+        <div id="blog_article_title_article">
+            <h1>
+                Le Trésor Caché de la Lecture en Famille :              
+            </h1>     
+            <p>
+                date
+            </p>
+            <div id="blog_article_photo_legende">
+                <div>
+                        <img src="{{asset('imgBlog/famille_histoire.jpg')}}" alt="#">
+                </div>
+                <p>Lire des histoires aux enfants n'est pas simplement une activité agréable avant le coucher. 
+                    C'est un investissement précieux dans leur développement. 
+                    Les bénéfices vont bien au-delà des mots sur la page et des images colorées. 
+                    Découvrons ensemble 14 raisons convaincantes de faire de la lecture une routine quotidienne avec vos petits.</p>
+            </div>
+            
+             
+        </div>
+    </section>
+    <section id="blog_article_bottom">
+        <article>
+            <h2>Les Trésors Inexplorés de la Lecture aux Enfants : <br>
+                14 Raisons Convaincantes pour Nourrir l'Esprit, Élargir l'Imagination et Créer des Liens Émotionnels Durables</h2>
+            <p>La lecture d'histoires aux enfants va bien au-delà d'une simple routine avant le coucher. 
+                C'est une activité qui nourrit l'esprit, élargit l'imagination et crée des liens émotionnels durables. 
+                Dans cet article, explorons ensemble 14 raisons convaincantes pour lesquelles la lecture régulière à vos 
+                enfants est une contribution inestimable à leur développement.</p>
+            <h3>1. Développement du Langage et de la Communication</h3>
+            <p>Lire des histoires expose les enfants à un vocabulaire riche et diversifié, 
+                contribuant ainsi au développement de leurs compétences linguistiques. 
+                Les histoires introduisent de nouveaux mots, des phrases complexes et des concepts abstraits, 
+                aidant les enfants à élargir leur compréhension du langage et à améliorer leur capacité à s'exprimer.</p>
+            <h3>2. Stimulation Cognitive</h3>
+            <p>Les livres pour enfants sont souvent conçus pour stimuler la curiosité et encourager la pensée critique. 
+                Les histoires présentent des personnages auxquels les enfants peuvent s'identifier, des dilemmes à résoudre e
+                t des leçons à apprendre. Ces éléments contribuent au développement des compétences cognitives, 
+                de la logique et de la compréhension du monde qui les entoure.</p>
+            <h3>3. Création de Liens Émotionnels</h3>
+            <p>Partager une histoire crée des moments spéciaux. Ces instants de lecture renforcent les liens émotionnels entre parents et enfants, 
+                établissant une connexion qui va au-delà des mots imprimés.</p>
+            <h3>4. Enseignement de Valeurs et Morale</h3>
+            <p>Beaucoup d'histoires pour enfants véhiculent des messages importants sur la moralité, l'amitié, la gentillesse et le partage. 
+                Ces récits offrent aux enfants des opportunités d'apprendre des leçons de vie essentielles de manière engageante et mémorable.</p>
+            <h3>5. Création de Liens Émotionnels</h3>
+            <p>Lire des histoires crée un moment intime entre les adultes et les enfants. 
+                C'est une occasion précieuse de renforcer les liens familiaux et de partager des émotions. 
+                Les discussions après la lecture permettent également d'approfondir la compréhension mutuelle et d'encourager l'expression émotionnelle.</p>
+            <h3>6. Préparation à la Lecture et à l'Écriture</h3>
+            <p>L'exposition précoce à la lecture facilite l'apprentissage ultérieur de la lecture et de l'écriture. 
+                Les enfants qui sont régulièrement exposés à des histoires développent une préférence naturelle pour les livres, 
+                établissant ainsi des bases solides pour leur éducation future.</p>
+            <h3>7. Favoriser la Concentration et l'Attention</h3>
+            <p>Écouter une histoire demande aux enfants de se concentrer sur le récit, d'écouter attentivement et de suivre le fil de l'histoire. 
+                Cette pratique régulière contribue au développement de la capacité de concentration et de l'attention, 
+                des compétences cruciales pour la réussite académique.</p>
+            
+            <p>En conclusion, lire des histoires aux enfants va bien au-delà du simple plaisir du moment. 
+                C'est un moyen puissant d'enrichir leur vie, de stimuler leur développement et de créer des souvenirs durables. 
+                En faisant de la lecture une partie intégrante de la routine quotidienne, 
+                les adultes offrent aux enfants un cadeau inestimable qui les accompagnera tout au long de leur vie.</p>
+        </article>
+        <aside id="blog_article_liste_article_aside">
+            <div class="blog_article_carte_article">
+                <img src="{{asset('imgBlog/saut.jpg')}}" alt="#" width="100%">  
+                <a href="#">    
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h3>
+                </a>
+            </div>
+            <div class="blog_article_carte_article">
+                <img src="{{asset('imgBlog/calin.jpg')}}" alt="#" width="100%">  
+            <a href="#">    
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h3>
+            </a>
+            </div>
+            <div class="blog_article_carte_article">
+                <img src="{{asset('imgBlog/sport.jpg')}}" alt="#" width="100%">  
+            <a href="#">    
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h3>
+            </a>
+            </div>
+            
+        </aside>
+    </section>
+
+
+</main>
+
+{% endblock %}

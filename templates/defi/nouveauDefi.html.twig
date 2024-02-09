@@ -3,7 +3,7 @@
 {% block title %}unNouveauDefi{% endblock %}
 
 {% block stylesheet %}
-    <link rel="stylesheet" href="{{ asset('css/cssLynda.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/defis.css') }}">
 
 	{# <link rel="stylesheet" href="{{ asset('css/creation.css') }}">
     <link rel="stylesheet" href="{{ asset('css/login.css') }}">
@@ -17,10 +17,10 @@
 <body>
           <main id="unNouveauDefi_Main">
                     <section id="popUpConnexion">
-                        <h2>Plus d'idée de défi ?</h2>
+                        <h2 class="titre2defi">Plus d'idée de défi ?</h2>
                         <div class="ensembleBlocs" >
                         <div class="questionBlocGauche">
-                            <img src="../img/homme_question.svg" alt="">
+                            <img class="imgDefi" src="{{ asset('img/homme_question.svg') }}" alt="">
                         </div>
                         <div class="questionBlocDroit">
                             <a href="{{path('login')}}" class="btn jaune" > Se connecter</a> <br>
