@@ -8,11 +8,14 @@ main{
                 url(../img/Ellipse_gras_ocre.svg) 20% 85%;
     background-repeat: no-repeat;
 
+
 }
 
 #inscription{
     width: 30%;
+    width: 30%;
     height: 60%;
+    margin: 75px auto;
     margin: 75px auto;
     border: 1px solid #BF5F56;
     box-shadow: 4px 4px 10px grey;
@@ -26,7 +29,15 @@ main{
     font-family: 'Oswald';
     font-size: 30px;
     font-weight: bold;
+}
+
+#inscription h2{
+    font-family: 'Oswald';
+    font-size: 30px;
+    font-weight: bold;
     text-align: center;
+    margin: 30px auto;
+    letter-spacing: 1px;
     margin: 30px auto;
     letter-spacing: 1px;
     color: #385A64;
@@ -64,6 +75,10 @@ main{
 
 .btn{
     font-weight: bold;
+}
+
+#bouton button{
+    border: none;
 }
 
 #bouton button{
